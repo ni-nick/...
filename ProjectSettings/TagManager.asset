@@ -6,6 +6,7 @@ TagManager:
   tags:
   - plataforma
   - trampolim
+  - moeda
   layers:
   - Default
   - TransparentFX
