@@ -54,7 +54,7 @@ public class Jogador2 : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGround)
         {
             rigidbody.AddForce(new Vector2(0, forcaPulo));
         }
@@ -70,6 +70,16 @@ public class Jogador2 : MonoBehaviour
         //     GetComponent<Animator>().SetBool("pulando", true);
         // }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision2D)
+    {
+        if (collision2D.gameObject.CompareTag("moeda"))
+        {
+            Destroy(collision2D.gameObject);
+            Recompensas++;
+            TextRecompensas.text = Recompensas.ToString();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
