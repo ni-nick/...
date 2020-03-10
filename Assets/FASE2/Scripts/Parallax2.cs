@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Parallax : MonoBehaviour
+public class Parallax2 : MonoBehaviour
 {
     private float lenght; // largura do sprite do background
     private float StartPosicao; // posição inicial
@@ -24,17 +24,16 @@ public class Parallax : MonoBehaviour
         float distancia = cam.transform.position.x * parallaxEfeito;
 
         transform.position = new Vector3(StartPosicao + distancia, transform.position.y, transform.position.z); // movimentação parallax
-    
-        if(rePos > StartPosicao + lenght)
+
+        if (rePos > StartPosicao + lenght)
         {
             StartPosicao += lenght;
 
-        }else if(rePos < StartPosicao - lenght)
+        }
+        else if (rePos < StartPosicao - lenght)
         {
             StartPosicao -= lenght;
         }
-            
-    
-    
+
     }
 }

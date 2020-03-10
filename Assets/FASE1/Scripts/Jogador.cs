@@ -59,14 +59,14 @@ public class Jogador : MonoBehaviour
 
         // pular
 
-       // if (isGround)
-      //  {
-         //   GetComponent<Animator>().SetBool("pulando", false);
-       // }
-       // else
-       // {
-       //     GetComponent<Animator>().SetBool("pulando", true);
-       // }
+        if (isGround)
+        {
+            GetComponent<Animator>().SetBool("pulando", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("pulando", true);
+        }
 
     }
 
