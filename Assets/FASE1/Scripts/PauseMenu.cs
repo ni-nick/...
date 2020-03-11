@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool jogopause = false;
-    public GameObject PauseMenuUI;
+    public GameObject PainelControleUI;
 
 
     void Update()
@@ -26,13 +26,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void resume()
     {
-        PauseMenuUI.SetActive(false);
+        PainelControleUI.SetActive(false);
         Time.timeScale = 1f;
         jogopause = false;
     }
     void pause()
     {
-        PauseMenuUI.SetActive(true);
+        PainelControleUI.SetActive(true);
         Time.timeScale = 0f;
         jogopause = true;
     }
