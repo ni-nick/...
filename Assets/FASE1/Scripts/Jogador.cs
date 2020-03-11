@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
@@ -61,11 +62,12 @@ public class Jogador : MonoBehaviour
 
         if (isGround)
         {
-            GetComponent<Animator>().SetBool("pulando", false);
+            GetComponent<Animator>().SetBool("pulando", false); 
         }
         else
         {
             GetComponent<Animator>().SetBool("pulando", true);
+            GetComponent<Animator>().SetBool("andando", false);
         }
 
     }
@@ -84,7 +86,13 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            //criar codigo
+            Vida--;
+            TextVida.text = Vida.ToString();
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+
         }
         if (collision2D.gameObject.CompareTag("plataforma"))
         {

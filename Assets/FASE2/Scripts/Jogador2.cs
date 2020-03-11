@@ -68,6 +68,7 @@ public class Jogador2 : MonoBehaviour
          else
          {
             GetComponent<Animator>().SetBool("pulando", true);
+            GetComponent<Animator>().SetBool("andando", false);
          }
 
     }
@@ -92,10 +93,7 @@ public class Jogador2 : MonoBehaviour
         {
             isGround = true;
         }
-        if (collision2D.gameObject.CompareTag("Moedas"))
-        {
-            //moedas
-        }
+       
 
         if (collision2D.gameObject.CompareTag("trampolim"))
         {
