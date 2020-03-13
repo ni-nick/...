@@ -40,16 +40,19 @@ public class PauseMenu2 : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("Abertura");
+        resume();
     }
 
     public void LoadScene1()
     {
         SceneManager.LoadScene("Fase1");
+        resume();
     }
 
     public void LoadScene2()
     {
         SceneManager.LoadScene("Fase2");
+        resume();
     }
 
     public void SairJogo()
