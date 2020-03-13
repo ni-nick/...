@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu2 : MonoBehaviour
 {
     public static bool jogopause = false;
     public GameObject PainelControleUI;
@@ -42,10 +42,14 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Abertura");
     }
 
-    public void LoadScene()
+    public void LoadScene1()
     {
         SceneManager.LoadScene("Fase1");
-        resume();
+    }
+
+    public void LoadScene2()
+    {
+        SceneManager.LoadScene("Fase2");
     }
 
     public void SairJogo()

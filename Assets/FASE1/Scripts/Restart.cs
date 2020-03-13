@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    //public GameObject PainelControleUI;
+
     public void Gameover()
     {
         SceneManager.LoadScene("GameOver");
@@ -25,6 +27,13 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene("Creditos");
     }
+    // public void Menu()
+   // {
+
+  //      SceneManager.LoadScene("PauseMenu");
+
+ //   }
+
 
 }
 
