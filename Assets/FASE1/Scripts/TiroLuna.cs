@@ -22,6 +22,12 @@ public class TiroLuna : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
+
+        Inimigo inimigo = collision2D.GetComponent<Inimigo>();
+        if(inimigo != null)
+        {
+            inimigo.recebeDano(damage);
+        }
         Destroy(gameObject);
     }
 }

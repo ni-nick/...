@@ -2,35 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoHorizontal : MonoBehaviour
+public class InimigoHorizontal : Inimigo
 {
-    private bool colidde = false;
-    private float move = -2;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+   protected override void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
-        if (colidde)
+        base.Update();
+
+        if (Mathf.Abs (targetdistancia) < distanciaataque)
         {
-            Flip();
+            transform.position = Vector3.MoveTowards(transform.position, target.position, velocidade * Time.deltaTime);
         }
-        
     }
 
-    private void Flip()
-    {
-        move *= -1;
-        GetComponent<SpriteRenderer>().flipX = GetComponent<SpriteRenderer>().flipX;
-        colidde = false;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // certo ---------------------------------------------------------------------
+    // Update is called once per frame
+  //  void Update()
+   // {
+      //  GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
+      //  if (colidde)
+      //  {
+         //   Flip();
+       // }
+        
+  //  }
+
+   // private void Flip()
+  //  {
+   //     move *= -1;
+    //    GetComponent<SpriteRenderer>().flipX = GetComponent<SpriteRenderer>().flipX;
+    //    colidde = false;
+   // }
 
   //  void OnCollisionEnter2D(Collision2D col)
  //   {
