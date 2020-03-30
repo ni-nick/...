@@ -18,6 +18,12 @@ public class Jogador : MonoBehaviour
 
     public bool isGround;
 
+    public Animator anim;
+    public float fireRate = 0.5f;
+    public float nextfire; // quando pode dar o proximo tiro
+    public GameObject tiroPefab;
+    public Transform shootspawner;
+
 
     void Start()
     {
@@ -25,21 +31,22 @@ public class Jogador : MonoBehaviour
         TextRecompensas.text = Recompensas.ToString();
     }
 
- 
+
     void FixedUpdate()
     {
         Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
 
         float movimento = Input.GetAxis("Horizontal");
 
-        rigidbody.velocity = new Vector2(movimento*velocidadeMax, rigidbody.velocity.y);
+        rigidbody.velocity = new Vector2(movimento * velocidadeMax, rigidbody.velocity.y);
 
 
-        if(movimento < 0)
+        if (movimento < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
 
-        }else if( movimento > 0)
+        }
+        else if (movimento > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -47,7 +54,8 @@ public class Jogador : MonoBehaviour
         if (movimento > 0 || movimento < 0)
         {
             GetComponent<Animator>().SetBool("andando", true);
-        } else
+        }
+        else
         {
             GetComponent<Animator>().SetBool("andando", false);
         }
@@ -62,7 +70,7 @@ public class Jogador : MonoBehaviour
 
         if (isGround)
         {
-            GetComponent<Animator>().SetBool("pulando", false); 
+            GetComponent<Animator>().SetBool("pulando", false);
         }
         else
         {
@@ -82,7 +90,7 @@ public class Jogador : MonoBehaviour
         }
     }
 
-     void OnCollisionEnter2D(Collision2D collision2D)
+    void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
@@ -110,6 +118,21 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = false;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && Time.time > nextfire)
+        {
+
+            GetComponent<Animator>().SetBool("atirando", true);
+            nextfire = Time.time + fireRate;
+            GameObject tempotiro = Instantiate(tiroPefab, shootspawner.position, shootspawner.rotation);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("atirando", false);
         }
     }
 }

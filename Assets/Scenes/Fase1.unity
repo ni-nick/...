@@ -145,6 +145,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &53294773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 53294774}
+  m_Layer: 9
+  m_Name: shootspawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &53294774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53294773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.99, y: 0.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1698066780}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136705781
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +390,7 @@ GameObject:
   - component: {fileID: 157845251}
   - component: {fileID: 157845253}
   - component: {fileID: 157845252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_matofundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +685,7 @@ GameObject:
   - component: {fileID: 315736456}
   - component: {fileID: 315736458}
   - component: {fileID: 315736457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_mato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425243761}
   - component: {fileID: 425243762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_mato (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1166,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1444,7 +1474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750883326}
   - component: {fileID: 750883327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_fundo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1523,7 +1553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788642676}
   - component: {fileID: 788642677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_matofundo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822582978}
   - component: {fileID: 822582979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1857,7 +1887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845277068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893343054}
   - component: {fileID: 893343055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2121,7 +2151,7 @@ GameObject:
   - component: {fileID: 919588031}
   - component: {fileID: 919588033}
   - component: {fileID: 919588032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_fundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2534,7 +2564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110660003}
   - component: {fileID: 1110660004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_fundo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2936,7 +2966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384624494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.12, y: -2, z: -4}
+  m_LocalPosition: {x: -14.12, y: -2.76, z: -4}
   m_LocalScale: {x: 0.796, y: 0.771, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3072,7 +3102,7 @@ GameObject:
   - component: {fileID: 1475193371}
   - component: {fileID: 1475193373}
   - component: {fileID: 1475193372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3166,7 +3196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478858719}
   - component: {fileID: 1478858720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_matofundo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3499,6 +3529,83 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 391900040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1611268395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611268396}
+  - component: {fileID: 1611268398}
+  - component: {fileID: 1611268397}
+  m_Layer: 5
+  m_Name: aviso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1611268396
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611268395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282086574}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 16, y: -127}
+  m_SizeDelta: {x: 203, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1611268397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611268395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3529412, g: 0.23137257, b: 0.48235297, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 10
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Precione "ESC" para voltar ao jogo
+--- !u!222 &1611268398
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611268395}
+  m_CullTransparentMesh: 0
 --- !u!4 &1615532893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5723876165915031108, guid: 9ddb7b947cf31eb4eb0f531b6206cbe7,
@@ -3826,7 +3933,7 @@ GameObject:
   - component: {fileID: 1698066783}
   - component: {fileID: 1698066784}
   - component: {fileID: 1698066781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Jogador
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3845,6 +3952,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 519420032}
+  - {fileID: 53294774}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3867,6 +3975,12 @@ MonoBehaviour:
   TextVida: {fileID: 705594918}
   TextRecompensas: {fileID: 869192125}
   isGround: 0
+  anim: {fileID: 0}
+  fireRate: 0.5
+  nextfire: 0
+  tiroPefab: {fileID: 1032916531827681844, guid: 02ccb97c01e647f41a2be45777bbaac7,
+    type: 3}
+  shootspawner: {fileID: 53294774}
 --- !u!70 &1698066783
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4592,7 +4706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.7, y: -31.64}
+  m_AnchoredPosition: {x: 4.7, y: -38}
   m_SizeDelta: {x: 167.55, y: 93.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079421594
@@ -4691,7 +4805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082788531}
   - component: {fileID: 2082788532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: teste_mato (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

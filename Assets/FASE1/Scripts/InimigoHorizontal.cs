@@ -32,19 +32,19 @@ public class InimigoHorizontal : MonoBehaviour
         colidde = false;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Plataforma"))
-        {
-            colidde = true;
-        }
-    }
+  //  void OnCollisionEnter2D(Collision2D col)
+ //   {
+    //    if (col.gameObject.CompareTag("Plataforma"))
+    //    {
+        //    colidde = true;
+    //    }
+    ///}
 
-    void OnCollisionExit2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Plataforma"))
-        {
-            colidde = false;
-        }
-    }
+    //void OnCollisionExit2D(Collision2D col)
+    //{
+      //  if (col.gameObject.CompareTag("Plataforma"))
+      //  {
+        //    colidde = false;
+      //  }
+   // }
 }
