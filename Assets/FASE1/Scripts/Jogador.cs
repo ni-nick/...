@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Jogador2 : MonoBehaviour
@@ -87,7 +88,13 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            //criar codigo
+            Vida--;
+            TextVida.text = Vida.ToString();
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+
         }
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
