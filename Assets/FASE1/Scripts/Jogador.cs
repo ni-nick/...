@@ -82,6 +82,13 @@ public class Jogador2 : MonoBehaviour
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
         }
+
+        if (collision2D.gameObject.CompareTag("InimigoMatar"))
+        {
+
+            Destroy(collision2D.gameObject);
+
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
@@ -96,6 +103,7 @@ public class Jogador2 : MonoBehaviour
             }
 
         }
+
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = true;
