@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Jogador2 : MonoBehaviour
+public class Jogador : MonoBehaviour
 {
     public float forcaPulo;
     public float velocidadeMax;
@@ -16,6 +17,12 @@ public class Jogador2 : MonoBehaviour
     public Text TextRecompensas;
 
     public bool isGround;
+
+    public Animator anim;
+    public float fireRate = 0.5f;
+    public float nextfire; // quando pode dar o proximo tiro
+    public GameObject tiroPefab;
+    public Transform shootspawner;
 
 
     void Start()
@@ -61,15 +68,15 @@ public class Jogador2 : MonoBehaviour
 
         // pular
 
-         if (isGround)
-          {
-           GetComponent<Animator>().SetBool("pulando", false);
-         }
-         else
-         {
+        if (isGround)
+        {
+            GetComponent<Animator>().SetBool("pulando", false);
+        }
+        else
+        {
             GetComponent<Animator>().SetBool("pulando", true);
             GetComponent<Animator>().SetBool("andando", false);
-         }
+        }
 
     }
 
@@ -87,13 +94,18 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            //criar codigo
+            Vida--;
+            TextVida.text = Vida.ToString();
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+
         }
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = true;
         }
-       
 
         if (collision2D.gameObject.CompareTag("trampolim"))
         {
@@ -106,6 +118,21 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = false;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && Time.time > nextfire)
+        {
+
+            GetComponent<Animator>().SetBool("atirando", true);
+            nextfire = Time.time + fireRate;
+            GameObject tempotiro = Instantiate(tiroPefab, shootspawner.position, shootspawner.rotation);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("atirando", false);
         }
     }
 }
