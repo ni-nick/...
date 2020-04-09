@@ -10,10 +10,15 @@ public class FalaInimigo : MonoBehaviour
         public GameObject canvasinimigo;
         public GameObject inimigoteste;
 
+
+    public Text textWriter;
+    public float tempoescrita = 0.1f;
+    public string Escrevafrase;
+
     void Start()
         {
-
-        }
+        StartCoroutine("mostraTexto", Escrevafrase); // vai começar mostrar a corrotina
+    }
 
         void Update()
         {
@@ -50,4 +55,15 @@ public class FalaInimigo : MonoBehaviour
             }
         }
 
+    IEnumerator mostraTexto(string textType)
+    {
+        textWriter.text = "";
+        for (int letter = 0; letter < textType.Length; letter++)
+        {
+            textWriter.text = textWriter.text + textType[letter];
+            yield return new WaitForSeconds(tempoescrita); //tempo que vai levar para terminar de escrever
+
+        }
     }
+
+}
