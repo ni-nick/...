@@ -1,4 +1,7 @@
-Ola! Meu nome eh tuichi, serei seu guia nessa aventura!
+Ola! Meu nome eh Tuichi, serei seu guia nessa aventura!
 As teclas necessarias para o jogo sao as seguintes:
-Caso tenha alguma duvida, basta me chamar clicando na tecla "espaso". 
+As setas do teclado sao usadas para os movimentos.
+Para matar um inimigo você precisa pular em cima dele.
+Para Pausar o Jogo, basta clicar na tecla "ESC".
+Caso tenha alguma duvida, basta me chamar clicando na tecla "Z". 
 Boa aventura!

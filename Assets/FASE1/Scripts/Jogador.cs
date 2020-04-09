@@ -90,6 +90,14 @@ public class Jogador2 : MonoBehaviour
             TextRecompensas.text = Recompensas.ToString();
 
         }
+
+        if (collision2D.gameObject.CompareTag("Vida"))
+        {
+            Destroy(collision2D.gameObject);
+           Vida++;
+            TextVida.text = Vida.ToString();
+
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
