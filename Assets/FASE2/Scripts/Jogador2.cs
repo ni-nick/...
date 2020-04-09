@@ -113,6 +113,7 @@ public class Jogador : MonoBehaviour
         }
     }
 
+
     void OnCollisionExit2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("plataforma"))
