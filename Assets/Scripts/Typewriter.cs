@@ -13,7 +13,7 @@ public class Typewriter : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine("mostraTexto", Escrevafrase);
+        StartCoroutine("mostraTexto", Escrevafrase); // vai começar mostrar a corrotina
     }
 
     IEnumerator mostraTexto(string textType)
@@ -22,7 +22,7 @@ public class Typewriter : MonoBehaviour
         for( int letter = 0; letter <textType.Length; letter++ )
         {
             textWriter.text = textWriter.text + textType[letter];
-            yield return new WaitForSeconds (tempoescrita);
+            yield return new WaitForSeconds (tempoescrita); //tempo que vai levar para terminar de escrever
 
         }
     }
