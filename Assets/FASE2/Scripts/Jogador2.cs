@@ -25,6 +25,7 @@ public class Jogador : MonoBehaviour
     public Transform shootspawner;
 
 
+
     void Start()
     {
         TextVida.text = Vida.ToString();
@@ -111,6 +112,7 @@ public class Jogador : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 14f); // aumentar os números, aumenta a força do pulo no trampolim
         }
+
     }
 
 

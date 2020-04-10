@@ -22,4 +22,5 @@ public class PlataformaHorizontal : MonoBehaviour
         else
             transform.position = new Vector2(transform.position.x - velocidade * Time.deltaTime, transform.position.y);
     }
+
 }
