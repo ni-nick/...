@@ -113,15 +113,26 @@ public class Jogador : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 14f); // aumentar os números, aumenta a força do pulo no trampolim
         }
 
+        if (collision2D.gameObject.CompareTag("auxiliar"))
+        {
+            isGround = true;
+        }
     }
 
 
     void OnCollisionExit2D(Collision2D collision2D)
     {
+
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = false;
         }
+
+        if (collision2D.gameObject.CompareTag("auxiliar"))
+        {
+            isGround = false;
+        }
+
     }
 
     void Update()
