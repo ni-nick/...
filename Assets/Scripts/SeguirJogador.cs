@@ -5,7 +5,9 @@ using UnityEngine;
 public class SeguirJogador : MonoBehaviour
 {
 
-    public Transform posisaoJogador;
+    public Transform target;
+
+
 
     void Start()
     {
@@ -14,6 +16,8 @@ public class SeguirJogador : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, posisaoJogador.position, 10 * Time.deltaTime);
+
+        transform.position = Vector2.MoveTowards(transform.position, target.position, 5 * Time.deltaTime);
+
     }
 }
