@@ -26,5 +26,9 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene("Creditos");
     }
+    public void historia()
+    {
+        SceneManager.LoadScene("Historia");
+    }
 }
 
