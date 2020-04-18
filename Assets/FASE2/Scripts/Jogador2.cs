@@ -26,6 +26,8 @@ public class Jogador : MonoBehaviour
 
 
 
+
+
     void Start()
     {
         TextVida.text = Vida.ToString();
@@ -95,6 +97,8 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+
+            //conferir se da pra ativar o spawner
             Vida--;
             TextVida.text = Vida.ToString();
             if (Vida == 0)
@@ -149,4 +153,6 @@ public class Jogador : MonoBehaviour
             GetComponent<Animator>().SetBool("atirando", false);
         }
     }
+
+  
 }

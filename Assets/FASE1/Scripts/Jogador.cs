@@ -18,6 +18,9 @@ public class Jogador2 : MonoBehaviour
 
     public bool isGround;
 
+    [SerializeField] public Transform player;
+    [SerializeField] public Transform PontoRespwn;
+
 
     void Start()
     {
@@ -97,6 +100,13 @@ public class Jogador2 : MonoBehaviour
            Vida++;
             TextVida.text = Vida.ToString();
 
+        }
+
+        if (collision2D.gameObject.CompareTag("ZonaMorte"))
+        {
+            player.transform.position = PontoRespwn.transform.position;
+            Vida--;
+            TextVida.text = Vida.ToString();
         }
     }
 
