@@ -107,6 +107,12 @@ public class Jogador2 : MonoBehaviour
             player.transform.position = PontoRespwn.transform.position;
             Vida--;
             TextVida.text = Vida.ToString();
+            // GetComponent<Animator>().SetBool("morrendo", true);
+
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
         }
     }
 

@@ -25,9 +25,6 @@ public class Jogador : MonoBehaviour
     public Transform shootspawner;
 
 
-
-
-
     void Start()
     {
         TextVida.text = Vida.ToString();
