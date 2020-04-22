@@ -20,6 +20,8 @@ public class Jogador2 : MonoBehaviour
 
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
+    [SerializeField] public Transform player2;
+    [SerializeField] public Transform PontoRespwn2;
 
 
     void Start()
@@ -105,6 +107,19 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
             player.transform.position = PontoRespwn.transform.position;
+            Vida--;
+            TextVida.text = Vida.ToString();
+            // GetComponent<Animator>().SetBool("morrendo", true);
+
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+
+        if (collision2D.gameObject.CompareTag("ZonaMorte2"))
+        {
+            player2.transform.position = PontoRespwn2.transform.position;
             Vida--;
             TextVida.text = Vida.ToString();
             // GetComponent<Animator>().SetBool("morrendo", true);
