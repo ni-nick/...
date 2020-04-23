@@ -88,7 +88,7 @@ public class Jogador2 : MonoBehaviour
             TextRecompensas.text = Recompensas.ToString();
         }
 
-        if (collision2D.gameObject.CompareTag("InimigoMatar"))
+        if (collision2D.gameObject.CompareTag("Inimigos"))
         {
             Destroy(collision2D.gameObject);
             Recompensas++;
