@@ -10,7 +10,7 @@ public class PassarDeFase : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) // quando o objeto para passar de fase tocar no "Player"
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // ele pega a cena atual mais 1 que vai para próxima cena 
+            SceneManager.LoadScene("Fase2"); // ele pega a cena atual mais 1 que vai para próxima cena 
         }
 
     }
