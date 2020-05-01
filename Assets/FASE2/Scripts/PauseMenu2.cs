@@ -37,19 +37,19 @@ public class PauseMenu2 : MonoBehaviour
         jogopause = true;
     }
 
-    public void LoadMenu()
+    public void LoadAbertura()
     {
         SceneManager.LoadScene("Abertura");
         resume();
     }
 
-    public void LoadScene1()
+    public void LoadFase1()
     {
         SceneManager.LoadScene("Fase1");
         resume();
     }
 
-    public void LoadScene2()
+    public void LoadFase2()
     {
         SceneManager.LoadScene("Fase2");
         resume();
