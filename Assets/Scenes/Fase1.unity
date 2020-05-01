@@ -27410,6 +27410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348520141}
   - component: {fileID: 1348520140}
+  - component: {fileID: 1348520142}
   m_Layer: 0
   m_Name: MariaLionza
   m_TagString: Untagged
@@ -27473,12 +27474,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348520139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24375439, y: -0.24664782, z: 0.53999996}
-  m_LocalScale: {x: 0.11345477, y: 0.08048796, z: 1}
+  m_LocalPosition: {x: -0.78, y: -0.8, z: 0.12}
+  m_LocalScale: {x: 0.3229206, y: 0.22280075, z: 1}
   m_Children: []
   m_Father: {fileID: 1407629749}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1348520142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348520139}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79ca79bde4008a64380085a9b5cd690d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1348754951
 GameObject:
   m_ObjectHideFlags: 0
@@ -27835,7 +27855,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 8ec5b0705e50ca34592ea93bff3884bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 265dcd0597e541141942a77e7987856d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -27854,8 +27874,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407629747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.072159, y: 0.89425707, z: 0.13993439}
-  m_LocalScale: {x: 7.8225, y: 9.162861, z: 1}
+  m_LocalPosition: {x: 2.48, y: 0.81, z: 0.13993439}
+  m_LocalScale: {x: 2.7130752, y: 3.0515401, z: 1}
   m_Children:
   - {fileID: 1348520141}
   m_Father: {fileID: 72438037}
@@ -30180,7 +30200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 210.51, y: -8.2, z: -0.22}
+  m_LocalPosition: {x: 206.1, y: -8.2, z: -0.22}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 519420032}
