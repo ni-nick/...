@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PassarDeFase : MonoBehaviour
+public class LoadCutscene : MonoBehaviour
 {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")) // quando o objeto para passar de fase tocar no "Player"
         {
-            SceneManager.LoadScene("Fase2"); // ele pega a cena atual e vai para a fase 2
+            SceneManager.LoadScene("DialogoMaria"); // ele pega a cena atual e encaminha para a cena da cutscene
         }
 
     }
