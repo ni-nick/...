@@ -96,6 +96,15 @@ public class Jogador2 : MonoBehaviour
 
         }
 
+
+        if (collision2D.gameObject.CompareTag("Inimigos2"))
+        {
+            Destroy(collision2D.gameObject);
+            Recompensas+=3;
+            TextRecompensas.text = Recompensas.ToString();
+
+        }
+
         if (collision2D.gameObject.CompareTag("Vida"))
         {
             Destroy(collision2D.gameObject);
@@ -144,7 +153,17 @@ public class Jogador2 : MonoBehaviour
 
         }
 
-        if (collision2D.gameObject.CompareTag("plataforma"))
+        if (collision2D.gameObject.CompareTag("Inimigos2"))
+        {
+            Vida-=2;
+            TextVida.text = Vida.ToString();
+            if (Vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+
+            if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = true;
         }
@@ -154,6 +173,7 @@ public class Jogador2 : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 14f); // aumentar os números, aumenta a força do pulo no trampolim
         }
+
     }
 
     void OnCollisionExit2D(Collision2D collision2D)
