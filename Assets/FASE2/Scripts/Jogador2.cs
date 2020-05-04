@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Jogador : MonoBehaviour
+public class Jogador2 : MonoBehaviour
 {
     public float forcaPulo;
     public float velocidadeMax;

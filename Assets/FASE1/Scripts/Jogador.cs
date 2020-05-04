@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Jogador2 : MonoBehaviour
+public class Jogador : MonoBehaviour
 {
     public float forcaPulo;
     public float velocidadeMax;
@@ -53,10 +53,12 @@ public class Jogador2 : MonoBehaviour
         if (movimento > 0 || movimento < 0)
         {
             GetComponent<Animator>().SetBool("andando", true);
+            GetComponent<Animator>().SetBool("Tuinchi", true);
         }
         else
         {
             GetComponent<Animator>().SetBool("andando", false);
+            GetComponent<Animator>().SetBool("Tuinchi", true);
         }
 
 

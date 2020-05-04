@@ -1,7 +1,7 @@
-Me chamou? Aqui vão as dicas:
+Me chamou? Clique 'Z' para ver as dicas!
 As teclas necessarias para o jogo sao as seguintes:
 As setas do teclado sao usadas para os movimentos.
-Para matar um inimigo você precisa pular em cima dele.
+Para matar um inimigo, precisas pular em cima dele.
 Para Pausar o Jogo, basta clicar na tecla "ESC".
-Caso tenha alguma duvida, basta me chamar clicando na tecla "Z". 
+Caso esquesa de algo, basta me chamar clicando na tecla "Z" para ver as dicas novamente. 
 Boa aventura!
