@@ -7,6 +7,17 @@ TagManager:
   - plataforma
   - trampolim
   - moeda
+  - InimigoMatar
+  - Inimigos
+  - Vida
+  - Boss
+  - plataformaMover
+  - auxiliar
+  - AuxiliarTuinchi
+  - ZonaMorte
+  - ZonaMorte2
+  - NGruda
+  - Inimigos2
   layers:
   - Default
   - TransparentFX
