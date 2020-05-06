@@ -44,10 +44,11 @@ public class Inimigo : MonoBehaviour
         saude -= dano;
         if(saude <= 0)
         {
-            Instantiate(coin, transform.position, transform.rotation);
-            Instantiate(animacaomorte, transform.position, transform.rotation);
+           // Instantiate(coin, transform.position, transform.rotation);
+           // Instantiate(animacaomorte, transform.position, transform.rotation);
 
             gameObject.SetActive(false);
+            Destroy(sprite);
         }
         else
         {

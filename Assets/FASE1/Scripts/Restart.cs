@@ -14,10 +14,6 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene("Fase1");
     }
-    public void ajustessom()
-    {
-        SceneManager.LoadScene("Ajustes");
-    }
     public void voltarmenu()
     {
         SceneManager.LoadScene("Abertura");
