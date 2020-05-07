@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: aa8b7619057509043b217079b91c38ec
+guid: 9e2b8b86b308da445b69f25953159f14
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: em cima up
+    21300002: plataformas 2 NICK- AZUL_1
+    21300004: embaixosub
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,9 +43,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -93,11 +96,71 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: em cima up
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 374
+        width: 161
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a506988c912a7884cad2e14203beef37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plataformas 2 NICK- AZUL_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 512
+        width: 45
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1173b0ed04f21342b1834d9128bceb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: embaixosub
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 8
+        width: 163
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6764f27b241b49a47f71bed693a12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 362605d4675525e4e8ad253b7b00bb54
+    spriteID: 588d6144dca9e014ab244576e22c8dc4
     vertices: []
     indices: 
     edges: []
