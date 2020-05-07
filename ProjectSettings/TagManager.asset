@@ -55,3 +55,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: "Ch\xE3o"
+    uniqueID: 2032132507
+    locked: 0
