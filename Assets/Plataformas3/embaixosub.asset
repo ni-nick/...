@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: testebaixo
+  m_Name: embaixosub
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 823d94a2dc520da4eab28f6a5486001a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: ce894f1c50d7cb7478f3381c29a7a14c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
