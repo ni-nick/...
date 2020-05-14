@@ -157,7 +157,7 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("trampolim"))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 14f); // aumentar os números, aumenta a força do pulo no trampolim
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 15f); // aumentar os números, aumenta a força do pulo no trampolim
         }
 
         if (collision2D.gameObject.CompareTag("auxiliar"))
