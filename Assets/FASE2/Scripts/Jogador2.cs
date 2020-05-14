@@ -90,7 +90,8 @@ public class Jogador2 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("moeda"))
-        {
+       {
+            gameObject.GetComponent<AudioSource>().Play(); 
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();

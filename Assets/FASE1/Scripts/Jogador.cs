@@ -85,6 +85,8 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("moeda"))
         {
+
+            gameObject.GetComponent<AudioSource>().Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
@@ -146,6 +148,8 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+
+            player.transform.position = PontoRespwn.transform.position;
             Vida--;
             TextVida.text = Vida.ToString();
             if (Vida == 0)
@@ -157,7 +161,8 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
-            Vida-=2;
+            player2.transform.position = PontoRespwn2.transform.position;
+            Vida -=2;
             TextVida.text = Vida.ToString();
             if (Vida == 0)
             {
