@@ -18,6 +18,7 @@ TagManager:
   - ZonaMorte2
   - NGruda
   - Inimigos2
+  - ZonaMorte3
   layers:
   - Default
   - TransparentFX
