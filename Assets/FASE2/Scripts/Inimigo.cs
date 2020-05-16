@@ -49,6 +49,9 @@ public class Inimigo : MonoBehaviour
             Instantiate(moeda, transform.position, transform.rotation);
 
             gameObject.SetActive(false);
+
+            Destroy(sprite);
+            Destroy(transform);
         }
         else
         {

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoHorizontalFase2 : MonoBehaviour
+public class InimigoHorizontalFase2 : Inimigo
 {
     private bool collidde = false;
     private float move = -2;
 
-    void Update()
+    protected override void Update()
     {
+  
+
         GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
         if (collidde)
         {

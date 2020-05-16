@@ -20,6 +20,15 @@ public class PoderLuna : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
+
+        Inimigo outroInimigo = collider2D.GetComponent<Inimigo>();
+        if (outroInimigo != null)
+        {
+
+            outroInimigo.LevaDano(dano);
+    
+        }
+
         Destroy(gameObject);
     }
 }
