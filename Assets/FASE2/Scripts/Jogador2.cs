@@ -38,12 +38,11 @@ public class Jogador2 : MonoBehaviour
         TextRecompensas.text = Recompensas.ToString();
     }
 
-
-    void FixedUpdate()
-    {
-        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
+    void FixedUpdate(){
 
         float movimento = Input.GetAxis("Horizontal");
+
+        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
 
         rigidbody.velocity = new Vector2(movimento * velocidadeMax, rigidbody.velocity.y);
 
@@ -85,6 +84,30 @@ public class Jogador2 : MonoBehaviour
             GetComponent<Animator>().SetBool("andando", false);
         }
 
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && Time.time > nextfire)
+        { 
+            nextfire = Time.time + fireRate;
+            GetComponent<Animator>().SetBool("atirando", true);
+            GameObject tempotiro = Instantiate(tiroPefab, shootspawner.position, shootspawner.rotation);
+
+
+            //if(virado pra esquerda)
+            //{
+            //tempotiro.transform.eulerAngles = new Vector3(0, 0, 180);
+            //}
+
+        }
+
+        else
+        {
+            GetComponent<Animator>().SetBool("atirando", false);
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision2D)
@@ -183,20 +206,7 @@ public class Jogador2 : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q) && Time.time > nextfire)
-        {
 
-            GetComponent<Animator>().SetBool("atirando", true);
-            nextfire = Time.time + fireRate;
-            GameObject tempotiro = Instantiate(tiroPefab, shootspawner.position, shootspawner.rotation);
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("atirando", false);
-        }
-    }
 
   
 }

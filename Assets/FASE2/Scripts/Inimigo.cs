@@ -6,57 +6,59 @@ public class Inimigo : MonoBehaviour
 {
 
     public int saude;
-    public float velocidade;
-    public float distanciaataque;
-    public GameObject coin;
-    public GameObject animacaomorte;
 
-    public Animator anim;
-    protected bool facingright = true;
-    protected Transform target;
-    protected float targetdistancia;
+    public float velocidade;
+    public float diatanciaAtaque;
+    public GameObject moeda;
+
+    protected Animator anim;
+    protected bool viradoDireira = true;
+    protected Transform alvo;
+    protected float alvoDiatancia;
     protected Rigidbody2D rb2d;
+
     protected SpriteRenderer sprite;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+        alvo = FindObjectOfType<Jogador>().transform;
         rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-        target = FindObjectOfType<Jogador>().transform;
     }
 
-     protected virtual void Update() // serve para o objeto seguir
-       {
-       targetdistancia = transform.position.x - target.position.x;
-
-     }
+    protected virtual void Update()
+    {
+        alvoDiatancia = transform.position.x - alvo.position.x;
+    }
 
     protected void Flip()
     {
+        viradoDireira = !viradoDireira;
+
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
     }
 
-    public void recebeDano (int dano)
+    public void LevaDano(int dano)
     {
         saude -= dano;
         if(saude <= 0)
         {
-           // Instantiate(coin, transform.position, transform.rotation);
-           // Instantiate(animacaomorte, transform.position, transform.rotation);
+            Instantiate(moeda, transform.position, transform.rotation);
 
             gameObject.SetActive(false);
-            Destroy(sprite);
         }
         else
         {
-            StartCoroutine(recebeDanoRoutine());
+            // corrotina do dano
+            StartCoroutine(levaDanoCorrotina());
         }
     }
 
-    IEnumerator recebeDanoRoutine()
+    // espera segundos antes de continuar 
+    IEnumerator levaDanoCorrotina()
     {
         sprite.color = Color.red;
         yield return new WaitForSeconds(0.1f);

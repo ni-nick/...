@@ -84,8 +84,7 @@ public class Jogador : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("moeda"))
-        {
-
+        { 
             gameObject.GetComponent<AudioSource>().Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
@@ -94,6 +93,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+            //GetComponent<Animator>().SetBool("pulando", true);
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
