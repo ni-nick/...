@@ -22,7 +22,6 @@ public class Inimigo : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
-        alvo = FindObjectOfType<Jogador>().transform;
         rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -30,15 +29,6 @@ public class Inimigo : MonoBehaviour
     protected virtual void Update()
     {
         alvoDiatancia = transform.position.x - alvo.position.x;
-    }
-
-    protected void Flip()
-    {
-        viradoDireira = !viradoDireira;
-
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
     }
 
     public void LevaDano(int dano)
@@ -51,17 +41,17 @@ public class Inimigo : MonoBehaviour
             gameObject.SetActive(false);
 
             Destroy(sprite);
-            Destroy(transform);
+            Destroy(gameObject);
         }
         else
         {
             // corrotina do dano
-            StartCoroutine(levaDanoCorrotina());
+            StartCoroutine(LevaDano());
         }
     }
 
     // espera segundos antes de continuar 
-    IEnumerator levaDanoCorrotina()
+    IEnumerator LevaDano()
     {
         sprite.color = Color.red;
         yield return new WaitForSeconds(0.1f);
