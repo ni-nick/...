@@ -40,7 +40,7 @@ public class Inimigo : MonoBehaviour
 
             gameObject.SetActive(false);
 
-            Destroy(sprite);
+            //Destroy(sprite);
             Destroy(gameObject);
         }
         else

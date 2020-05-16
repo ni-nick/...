@@ -165,7 +165,7 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
 
-            //conferir se da pra ativar o spawner
+            player.transform.position = PontoRespwn.transform.position;
             Vida--;
             TextVida.text = Vida.ToString();
             if (Vida == 0)
@@ -174,6 +174,7 @@ public class Jogador2 : MonoBehaviour
             }
 
         }
+
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
             isGround = true;
