@@ -120,6 +120,11 @@ public class Jogador2 : MonoBehaviour
             TextRecompensas.text = Recompensas.ToString();
         }
 
+        if (collision2D.gameObject.CompareTag("MoedaGanhou"))
+        {
+            SceneManager.LoadScene("YouWin");
+        }
+
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
             player.transform.position = PontoRespwn.transform.position;

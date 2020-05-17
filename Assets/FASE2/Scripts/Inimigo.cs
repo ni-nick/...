@@ -26,6 +26,16 @@ public class Inimigo : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
 
+
+    public void Flip()
+    {
+        viradoDireira = !viradoDireira;
+
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
     protected virtual void Update()
     {
         alvoDiatancia = transform.position.x - alvo.position.x;
