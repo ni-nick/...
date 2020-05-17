@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InimigoOscuno : Inimigo
 {
-    public GameObject OscunoPoder;
+    public GameObject OscunoPoderPrefab;
     public Transform tiroSpawnner;
     public float tiroRate;
     private float proximoTiro;
@@ -38,16 +38,14 @@ public class InimigoOscuno : Inimigo
         {
             anim.SetTrigger("Atacando");
             proximoTiro = Time.time + tiroRate;
+            GameObject tempPoder = Instantiate(OscunoPoderPrefab, tiroSpawnner.position, tiroSpawnner.rotation);
+
+            if (!viradoDireira)
+            {
+                tempPoder.transform.eulerAngles = new Vector3(0, 0, 180);
+            }
         }
     }
 
-    public void Atacando()
-    {
-        GameObject tempPoder = Instantiate(OscunoPoder, tiroSpawnner.position, tiroSpawnner.rotation);
-        if (!viradoDireira)
-        {
-            tempPoder.transform.eulerAngles = new Vector3(0, 0, 180);
-        }
-    }
 
 }
