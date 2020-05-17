@@ -19,6 +19,7 @@ TagManager:
   - NGruda
   - Inimigos2
   - ZonaMorte3
+  - MoedaGanhou
   layers:
   - Default
   - TransparentFX
@@ -28,9 +29,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - LunaTiro
+  - Player
+  - TiroInimigo
   - 
   - 
   - 
