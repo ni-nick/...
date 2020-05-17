@@ -9,6 +9,12 @@ public class InimigoOscuno : Inimigo
     public float tiroRate;
     private float proximoTiro;
 
+
+    void Start()
+    {
+
+    }
+
     protected override void Update()
     {
 
@@ -35,7 +41,7 @@ public class InimigoOscuno : Inimigo
         }
     }
 
-    public void Atirando()
+    public void Atacando()
     {
         GameObject tempPoder = Instantiate(OscunoPoder, tiroSpawnner.position, tiroSpawnner.rotation);
         if (!viradoDireira)

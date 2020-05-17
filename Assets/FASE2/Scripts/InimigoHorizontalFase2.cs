@@ -9,7 +9,6 @@ public class InimigoHorizontalFase2 : Inimigo
 
     protected override void Update()
     {
-  
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
         if (collidde)

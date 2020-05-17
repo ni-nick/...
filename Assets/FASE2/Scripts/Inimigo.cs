@@ -24,6 +24,8 @@ public class Inimigo : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        alvo = FindObjectOfType<Jogador2>().transform;
+
     }
 
 
