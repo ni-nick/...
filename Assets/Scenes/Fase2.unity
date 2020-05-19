@@ -5493,7 +5493,7 @@ GameObject:
   m_Layer: 11
   m_Name: OscunoSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6214,7 +6214,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.42132926, y: -0.33662713}
@@ -6244,12 +6244,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saude: 5
   velocidade: 5
-  diatanciaAtaque: 50
+  diatanciaAtaque: 30
   moeda: {fileID: 2518941593801032743, guid: a2cd0dfa905fe6f4bb327fe180db25ee, type: 3}
   OscunoPoderPrefab: {fileID: 4924323515152730144, guid: 997c4bfa6959947428cacfee5fb99858,
     type: 3}
   tiroSpawnner: {fileID: 943553247}
-  tiroRate: 1
+  tiroRate: 3
 --- !u!1 &1037763945
 GameObject:
   m_ObjectHideFlags: 0
@@ -8004,7 +8004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211192410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 447.5, y: 17.5, z: 1.86}
+  m_LocalPosition: {x: 451.9, y: 18, z: 1.86}
   m_LocalScale: {x: 0.6356, y: 0.6153, z: 0.7}
   m_Children:
   - {fileID: 801233702}
@@ -8196,6 +8196,7 @@ MonoBehaviour:
   PontoRespwn2: {fileID: 662576308}
   player3: {fileID: 1211192412}
   PontoRespwn3: {fileID: 411519259}
+  danoTempo: 1
 --- !u!1 &1226038135
 GameObject:
   m_ObjectHideFlags: 0

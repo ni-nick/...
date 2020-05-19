@@ -18,12 +18,14 @@ public class Jogador2 : MonoBehaviour
 
     public bool isGround;
 
+    //tiro do player
     public Animator anim;
     public float fireRate = 0.5f;
     public float nextfire; // quando pode dar o proximo tiro
     public GameObject tiroPefab;
     public Transform shootspawner;
 
+    //chekpoint
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
     [SerializeField] public Transform player2;
@@ -31,7 +33,10 @@ public class Jogador2 : MonoBehaviour
     [SerializeField] public Transform player3;
     [SerializeField] public Transform PontoRespwn3;
 
-
+    //levar dano do oscuno
+    public float danoTempo = 1f;
+    private bool levouDano = false;
+    
     void Start()
     {
         TextVida.text = Vida.ToString();
@@ -163,6 +168,11 @@ public class Jogador2 : MonoBehaviour
                 SceneManager.LoadScene("GameOver");
             }
         }
+
+        if (collision2D.gameObject.CompareTag("Oscuno") && !levouDano)
+        {
+            StartCoroutine(LevouDano());
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
@@ -194,6 +204,11 @@ public class Jogador2 : MonoBehaviour
         {
             isGround = true;
         }
+
+        if (collision2D.gameObject.CompareTag("Oscuno") && !levouDano)
+        {
+            StartCoroutine(LevouDano());
+        }
     }
 
 
@@ -212,7 +227,38 @@ public class Jogador2 : MonoBehaviour
 
     }
 
+    IEnumerator LevouDano()
+    {
+        levouDano = true;
+        Vida--;
+        TextVida.text = Vida.ToString();
+        if(Vida <= 0)
+        {
+            //anim.SetTrigger("morrendo"); //criar a animação >:(
+            Invoke("LunaMorte",2f);
+
+        }
+
+        else
+        {
+            Physics2D.IgnoreLayerCollision(9,11); // ignorar a camada do player e do inimigo pra poder levar dano
+            for(float i = 0; i < danoTempo; i += 0.2f) // vai fazer o sprite piscar pra mostrar que levou dano
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                yield return new WaitForSeconds(0.1f);
+                GetComponent<SpriteRenderer>().enabled = true;
+                yield return new WaitForSeconds(0.1f);
+            }
+            Physics2D.IgnoreLayerCollision(9, 11, false);
+            levouDano = false;
+        }
+    }
+
+    void LunaMorte()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 
 
-  
+
 }

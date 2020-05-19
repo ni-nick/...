@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4582502656397091462}
   m_Layer: 10
   m_Name: PoderOscuno
-  m_TagString: Untagged
+  m_TagString: Oscuno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
