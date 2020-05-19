@@ -20,6 +20,7 @@ TagManager:
   - Inimigos2
   - ZonaMorte3
   - MoedaGanhou
+  - Oscuno
   layers:
   - Default
   - TransparentFX
