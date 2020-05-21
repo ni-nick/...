@@ -99,7 +99,6 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            // colocar aqui o pulo
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
@@ -109,6 +108,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
+            // colocar o pulo duplo aqui
             Destroy(collision2D.gameObject);
             Recompensas+=2;
             TextRecompensas.text = Recompensas.ToString();
