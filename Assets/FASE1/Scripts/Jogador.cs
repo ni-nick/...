@@ -23,6 +23,10 @@ public class Jogador : MonoBehaviour
     [SerializeField] public Transform player2;
     [SerializeField] public Transform PontoRespwn2;
 
+    //levar dano do inimigo
+    public float danoTempo = 1f;
+    private bool levouDano = false;
+    public Animator anim;
 
     void Start()
     {
@@ -93,7 +97,6 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            //GetComponent<Animator>().SetBool("pulando", true);
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
@@ -104,7 +107,7 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
             Destroy(collision2D.gameObject);
-            Recompensas+=3;
+            Recompensas+=2;
             TextRecompensas.text = Recompensas.ToString();
 
         }
@@ -120,27 +123,13 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
             player.transform.position = PontoRespwn.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            // GetComponent<Animator>().SetBool("morrendo", true);
-
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
             player2.transform.position = PontoRespwn2.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            // GetComponent<Animator>().SetBool("morrendo", true);
-
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
         }
     }
 
@@ -148,26 +137,15 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-
             player.transform.position = PontoRespwn.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
 
         }
 
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
             player2.transform.position = PontoRespwn2.transform.position;
-            Vida -=2;
-            TextVida.text = Vida.ToString();
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo2());
         }
 
             if (collision2D.gameObject.CompareTag("plataforma"))
@@ -189,6 +167,67 @@ public class Jogador : MonoBehaviour
         {
             isGround = false;
         }
+    }
+
+    IEnumerator LevouDanoInimigo()
+    {
+        
+        levouDano = true;
+        Vida--;
+        TextVida.text = Vida.ToString();
+        if (Vida == 0)
+        {
+            anim.SetTrigger("morrendo");
+            Invoke("LunaMorte", 2f);
+
+        }
+
+        else
+        {
+            Physics2D.IgnoreLayerCollision(9, 11); // ignorar a camada do player e do inimigo pra poder levar dano
+            for (float i = 0; i < danoTempo; i += 0.2f) // vai fazer o sprite piscar pra mostrar que levou dano
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                yield return new WaitForSeconds(0.1f);
+                GetComponent<SpriteRenderer>().enabled = true;
+                yield return new WaitForSeconds(0.1f);
+            }
+            Physics2D.IgnoreLayerCollision(9, 11, false);
+            levouDano = false;
+        }
+    }
+
+    IEnumerator LevouDanoInimigo2()
+    {
+
+        levouDano = true;
+        Vida-=2;
+        TextVida.text = Vida.ToString();
+        if (Vida == 0)
+        {
+            anim.SetTrigger("morrendo");
+            Invoke("LunaMorte", 2f);
+
+        }
+
+        else
+        {
+            Physics2D.IgnoreLayerCollision(9, 11); // ignorar a camada do player e do inimigo pra poder levar dano
+            for (float i = 0; i < danoTempo; i += 0.2f) // vai fazer o sprite piscar pra mostrar que levou dano
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                yield return new WaitForSeconds(0.1f);
+                GetComponent<SpriteRenderer>().enabled = true;
+                yield return new WaitForSeconds(0.1f);
+            }
+            Physics2D.IgnoreLayerCollision(9, 11, false);
+            levouDano = false;
+        }
+    }
+
+    void LunaMorte()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
 

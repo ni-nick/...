@@ -33,7 +33,7 @@ public class Jogador2 : MonoBehaviour
     [SerializeField] public Transform player3;
     [SerializeField] public Transform PontoRespwn3;
 
-    //levar dano do oscuno
+    //levar dano do oscuno e do inimigo
     public float danoTempo = 1f;
     private bool levouDano = false;
     
@@ -133,40 +133,19 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
             player.transform.position = PontoRespwn.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            // GetComponent<Animator>().SetBool("morrendo", true);
-
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
             player2.transform.position = PontoRespwn2.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            // GetComponent<Animator>().SetBool("morrendo", true);
-
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("ZonaMorte3"))
         {
             player3.transform.position = PontoRespwn3.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            // GetComponent<Animator>().SetBool("morrendo", true);
-
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("Oscuno") && !levouDano)
@@ -179,14 +158,8 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-
             player.transform.position = PontoRespwn.transform.position;
-            Vida--;
-            TextVida.text = Vida.ToString();
-            if (Vida == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+            StartCoroutine(LevouDanoInimigo());
 
         }
 
@@ -232,7 +205,7 @@ public class Jogador2 : MonoBehaviour
         levouDano = true;
         Vida--;
         TextVida.text = Vida.ToString();
-        if(Vida <= 0)
+        if(Vida == 0)
         {
             anim.SetTrigger("morrendo"); 
             Invoke("LunaMorte",2f);
@@ -242,7 +215,34 @@ public class Jogador2 : MonoBehaviour
         else
         {
             Physics2D.IgnoreLayerCollision(9,11); // ignorar a camada do player e do inimigo pra poder levar dano
-            for(float i = 0; i < danoTempo; i += 0.2f) // vai fazer o sprite piscar pra mostrar que levou dano
+            for(float i = 0; i < danoTempo; i += 0.1f) // vai fazer o sprite piscar pra mostrar que levou dano
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                yield return new WaitForSeconds(0.05f);
+                GetComponent<SpriteRenderer>().enabled = true;
+                yield return new WaitForSeconds(0.05f);
+            }
+            Physics2D.IgnoreLayerCollision(9, 11, false);
+            levouDano = false;
+        }
+    }
+
+    IEnumerator LevouDanoInimigo()
+    {
+        levouDano = true;
+        Vida--;
+        TextVida.text = Vida.ToString();
+        if (Vida == 0)
+        {
+            anim.SetTrigger("morrendo");
+            Invoke("LunaMorte", 2f);
+
+        }
+
+        else
+        {
+            Physics2D.IgnoreLayerCollision(9, 11); // ignorar a camada do player e do inimigo pra poder levar dano
+            for (float i = 0; i < danoTempo; i += 0.2f) // vai fazer o sprite piscar pra mostrar que levou dano
             {
                 GetComponent<SpriteRenderer>().enabled = false;
                 yield return new WaitForSeconds(0.1f);
