@@ -6,7 +6,7 @@ public class InimigoOscuno : Inimigo
 {
     public GameObject OscunoPoderPrefab;
     public Transform tiroSpawnner;
-    public float tiroRate;
+    public float tiroRate=7;
     private float proximoTiro;
 
 

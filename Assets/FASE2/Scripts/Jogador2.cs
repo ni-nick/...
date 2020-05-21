@@ -54,12 +54,14 @@ public class Jogador2 : MonoBehaviour
 
         if (movimento < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            // GetComponent<SpriteRenderer>().flipX = true;
+            transform.localScale = new Vector3(-0.6356f, 0.6153f, 0.7f);
 
         }
         else if (movimento > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            //  GetComponent<SpriteRenderer>().flipX = false;
+            transform.localScale = new Vector3(0.6356f, 0.6153f, 0.7f);
         }
 
         if (movimento > 0 || movimento < 0)
@@ -101,10 +103,10 @@ public class Jogador2 : MonoBehaviour
             GameObject tempotiro = Instantiate(tiroPefab, shootspawner.position, shootspawner.rotation);
 
 
-            //if(virado pra esquerda)
-            //{
-            //tempotiro.transform.eulerAngles = new Vector3(0, 0, 180);
-            //}
+            if(transform.localScale.x < 0)
+            {
+            tempotiro.transform.eulerAngles = new Vector3(0, 0, 180);
+            }
 
         }
 

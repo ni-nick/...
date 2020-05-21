@@ -46,12 +46,14 @@ public class Jogador : MonoBehaviour
 
         if (movimento < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            //GetComponent<SpriteRenderer>().flipX = true;
+            transform.localScale = new Vector3(-0.4625f, 0.45625f, 0.5f);
 
         }
         else if (movimento > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            //GetComponent<SpriteRenderer>().flipX = false;
+            transform.localScale = new Vector3(0.4625f, 0.45625f, 0.5f);
         }
 
         if (movimento > 0 || movimento < 0)
@@ -97,6 +99,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+            // colocar aqui o pulo
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
