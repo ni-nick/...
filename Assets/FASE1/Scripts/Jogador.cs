@@ -53,12 +53,12 @@ public class Jogador : MonoBehaviour
         if (movimento > 0 || movimento < 0)
         {
             GetComponent<Animator>().SetBool("andando", true);
-            GetComponent<Animator>().SetBool("Tuinchi", true);
+            //GetComponent<Animator>().SetBool("Tuinchi", true);
         }
         else
         {
             GetComponent<Animator>().SetBool("andando", false);
-            GetComponent<Animator>().SetBool("Tuinchi", true);
+            //GetComponent<Animator>().SetBool("Tuinchi", true);
         }
 
 

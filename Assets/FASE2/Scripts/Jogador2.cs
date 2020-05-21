@@ -234,7 +234,7 @@ public class Jogador2 : MonoBehaviour
         TextVida.text = Vida.ToString();
         if(Vida <= 0)
         {
-            //anim.SetTrigger("morrendo"); //criar a animação >:(
+            anim.SetTrigger("morrendo"); 
             Invoke("LunaMorte",2f);
 
         }
