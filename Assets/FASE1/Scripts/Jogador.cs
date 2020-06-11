@@ -102,7 +102,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-           // Rigidbody2D rbody = GetComponent<Rigidbody2D>();
+           
             rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
             rbody.AddForce(new Vector2(0, forcaPulo/2));
 
@@ -115,6 +115,8 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
+            rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
+            rbody.AddForce(new Vector2(0, forcaPulo / 2));
 
             Destroy(collision2D.gameObject);
             Recompensas+=2;
@@ -132,12 +134,19 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
+
+            rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
+            rbody.AddForce(new Vector2(0, forcaPulo / 2));
+
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
+            rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
+            rbody.AddForce(new Vector2(0, forcaPulo / 2));
+
             player2.transform.position = PontoRespwn2.transform.position;
             StartCoroutine(LevouDanoInimigo());
         }
