@@ -88,6 +88,7 @@ public class Jogador : MonoBehaviour
             GetComponent<Animator>().SetBool("andando", false);
         }
 
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision2D)
