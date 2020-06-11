@@ -4821,7 +4821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535146353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.98, y: -7.12, z: 6.0625}
+  m_LocalPosition: {x: -31.51, y: -7.12, z: 6.0625}
   m_LocalScale: {x: 0.13348, y: 0.13348, z: 0.13348}
   m_Children: []
   m_Father: {fileID: 0}
@@ -29436,7 +29436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343615783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.02, y: -4.07, z: 0.03515625}
+  m_LocalPosition: {x: -4.02, y: -5.98, z: 0.03515625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 193719556}
@@ -32697,7 +32697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.7, y: -5.9, z: -0.22}
+  m_LocalPosition: {x: -26.68, y: -4.02, z: -0.22}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 519420032}
@@ -32718,7 +32718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 400
+  forcaPulo: 500
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0

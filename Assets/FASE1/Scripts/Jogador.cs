@@ -18,6 +18,8 @@ public class Jogador : MonoBehaviour
 
     public bool isGround;
 
+    public Rigidbody2D rbody;
+
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
     [SerializeField] public Transform player2;
@@ -32,6 +34,7 @@ public class Jogador : MonoBehaviour
     {
         TextVida.text = Vida.ToString();
         TextRecompensas.text = Recompensas.ToString();
+        rbody = GetComponent<Rigidbody2D>();
     }
 
 
@@ -99,6 +102,10 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+           // Rigidbody2D rbody = GetComponent<Rigidbody2D>();
+            rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
+            rbody.AddForce(new Vector2(0, forcaPulo/2));
+
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
@@ -108,7 +115,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
-            // colocar o pulo duplo aqui
+
             Destroy(collision2D.gameObject);
             Recompensas+=2;
             TextRecompensas.text = Recompensas.ToString();

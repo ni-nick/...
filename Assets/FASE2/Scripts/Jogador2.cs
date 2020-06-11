@@ -18,6 +18,8 @@ public class Jogador2 : MonoBehaviour
 
     public bool isGround;
 
+    public Light luz;
+
     //tiro do player
     public Animator anim;
     public float fireRate = 0.5f;
@@ -141,6 +143,7 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
             player2.transform.position = PontoRespwn2.transform.position;
+
             StartCoroutine(LevouDanoInimigo());
         }
 
