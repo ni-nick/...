@@ -20,6 +20,9 @@ public class Jogador : MonoBehaviour
 
     public Rigidbody2D rbody;
 
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioSource moeda;
+
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
     [SerializeField] public Transform player2;
@@ -35,6 +38,7 @@ public class Jogador : MonoBehaviour
         TextVida.text = Vida.ToString();
         TextRecompensas.text = Recompensas.ToString();
         rbody = GetComponent<Rigidbody2D>();
+        //audio = GetComponent<AudioSource>();
     }
 
 
@@ -74,6 +78,7 @@ public class Jogador : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGround)
         {
             rigidbody.AddForce(new Vector2(0, forcaPulo));
+            audio.Play();
         }
 
         // pular
@@ -95,7 +100,7 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("moeda"))
         { 
-            gameObject.GetComponent<AudioSource>().Play();
+            moeda.Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
