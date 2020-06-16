@@ -22,6 +22,7 @@ public class Jogador : MonoBehaviour
 
     [SerializeField] private AudioSource audio;
     [SerializeField] private AudioSource moeda;
+    [SerializeField] private AudioSource morte;
 
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
@@ -112,6 +113,7 @@ public class Jogador : MonoBehaviour
             rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
             rbody.AddForce(new Vector2(0, forcaPulo/2));
 
+            morte.Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
