@@ -38060,7 +38060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.55, y: -6.92, z: -0.22}
+  m_LocalPosition: {x: -41, y: -6.92, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -39832,7 +39832,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1897743561}
   - component: {fileID: 1897743563}
-  - component: {fileID: 1897743562}
   m_Layer: 9
   m_Name: AuxiliarTuinchi
   m_TagString: AuxiliarTuinchi
@@ -39854,25 +39853,6 @@ Transform:
   m_Father: {fileID: 1698066780}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1897743562
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897743560}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8760de15e9ebc9f48b97d73e26d605eb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1897743563
 SpriteRenderer:
   m_ObjectHideFlags: 0
