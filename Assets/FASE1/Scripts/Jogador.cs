@@ -20,10 +20,12 @@ public class Jogador : MonoBehaviour
 
     public Rigidbody2D rbody;
 
-    [SerializeField] private AudioSource audio;
+    //sons da cena
+    [SerializeField] private AudioSource pulo;
     [SerializeField] private AudioSource moeda;
-    [SerializeField] private AudioSource morte;
+    [SerializeField] private AudioSource morte; // morte do inimigo 
 
+    //chekpoint
     [SerializeField] public Transform player;
     [SerializeField] public Transform PontoRespwn;
     [SerializeField] public Transform player2;
@@ -76,10 +78,10 @@ public class Jogador : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGround)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGround) // pulo
         {
             rigidbody.AddForce(new Vector2(0, forcaPulo));
-            audio.Play();
+            pulo.Play();
         }
 
         // pular

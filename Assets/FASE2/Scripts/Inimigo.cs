@@ -19,6 +19,8 @@ public class Inimigo : MonoBehaviour
 
     protected SpriteRenderer sprite;
 
+    public AudioSource morte; // morte do inimigo 
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -52,6 +54,7 @@ public class Inimigo : MonoBehaviour
 
             gameObject.SetActive(false);
 
+            morte.Play();
             //Destroy(sprite);
             Destroy(gameObject);
         }

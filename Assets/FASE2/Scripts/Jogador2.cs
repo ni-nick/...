@@ -35,6 +35,12 @@ public class Jogador2 : MonoBehaviour
     [SerializeField] public Transform player3;
     [SerializeField] public Transform PontoRespwn3;
 
+    //sons da cena
+
+    [SerializeField] private AudioSource pulo;
+    [SerializeField] private AudioSource moeda;
+    [SerializeField] private AudioSource morte; // morte do inimigo 
+
     //levar dano do oscuno e do inimigo
     public float danoTempo = 1f;
     private bool levouDano = false;
@@ -43,6 +49,7 @@ public class Jogador2 : MonoBehaviour
     {
         TextVida.text = Vida.ToString();
         TextRecompensas.text = Recompensas.ToString();
+        //rbody = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate(){
@@ -79,6 +86,7 @@ public class Jogador2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGround)
         {
             rigidbody.AddForce(new Vector2(0, forcaPulo));
+            pulo.Play();
         }
 
         // pular
@@ -123,7 +131,7 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("moeda"))
        {
-            gameObject.GetComponent<AudioSource>().Play(); 
+            moeda.Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
@@ -163,6 +171,7 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
+            
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
 
