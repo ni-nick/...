@@ -327,7 +327,6 @@ MonoBehaviour:
   velocidade: 2
   diatanciaAtaque: 10
   moeda: {fileID: 5767511539134365489, guid: 1ad12c6eda08a7246a53b7a19f39b2a6, type: 3}
-  morte: {fileID: 27141528}
 --- !u!61 &27141526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2596,7 +2595,6 @@ MonoBehaviour:
   velocidade: 45
   diatanciaAtaque: 3
   moeda: {fileID: 5767511539134365489, guid: 1ad12c6eda08a7246a53b7a19f39b2a6, type: 3}
-  morte: {fileID: 0}
 --- !u!50 &281776888
 Rigidbody2D:
   serializedVersion: 4
@@ -4036,6 +4034,7 @@ GameObject:
   - component: {fileID: 423115219}
   - component: {fileID: 423115220}
   - component: {fileID: 423115222}
+  - component: {fileID: 423115221}
   m_Layer: 9
   m_Name: AuxiliarTuinchi Fase2
   m_TagString: Untagged
@@ -4051,7 +4050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423115218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5173073, y: 2.6328633, z: 0.19999997}
+  m_LocalPosition: {x: -3, y: 2.5, z: 2}
   m_LocalScale: {x: 0.4625001, y: 0.45624995, z: 1}
   m_Children: []
   m_Father: {fileID: 1211192412}
@@ -4105,6 +4104,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &423115221
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423115218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36a4d9981f28be34fa07b422c7459c67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &423115222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9056,7 +9074,6 @@ MonoBehaviour:
   velocidade: 5
   diatanciaAtaque: 30
   moeda: {fileID: 4741935945665275906, guid: a2cd0dfa905fe6f4bb327fe180db25ee, type: 3}
-  morte: {fileID: 0}
   OscunoPoderPrefab: {fileID: 4924323515152730144, guid: 997c4bfa6959947428cacfee5fb99858,
     type: 3}
   tiroSpawnner: {fileID: 943553247}
@@ -12448,7 +12465,6 @@ MonoBehaviour:
   velocidade: 45
   diatanciaAtaque: 3
   moeda: {fileID: 5767511539134365489, guid: 1ad12c6eda08a7246a53b7a19f39b2a6, type: 3}
-  morte: {fileID: 0}
 --- !u!61 &1324891385
 BoxCollider2D:
   m_ObjectHideFlags: 0

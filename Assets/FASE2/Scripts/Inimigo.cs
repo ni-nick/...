@@ -19,7 +19,7 @@ public class Inimigo : MonoBehaviour
 
     protected SpriteRenderer sprite;
 
-    public AudioSource morte; // morte do inimigo 
+    //public AudioSource morte; // morte do inimigo 
 
     void Awake()
     {
@@ -54,7 +54,7 @@ public class Inimigo : MonoBehaviour
 
             gameObject.SetActive(false);
 
-            morte.Play();
+            //morte.Play();
             //Destroy(sprite);
             Destroy(gameObject);
         }
