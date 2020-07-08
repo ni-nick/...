@@ -10,6 +10,7 @@ public class Inimigo : MonoBehaviour
     public float velocidade;
     public float diatanciaAtaque;
     public GameObject moeda;
+    [SerializeField] public AudioSource morte; // morte do inimigo 
 
     protected Animator anim;
     protected bool viradoDireira = true;
@@ -19,7 +20,7 @@ public class Inimigo : MonoBehaviour
 
     protected SpriteRenderer sprite;
 
-    //public AudioSource morte; // morte do inimigo 
+
 
     void Awake()
     {
@@ -50,11 +51,14 @@ public class Inimigo : MonoBehaviour
         saude -= dano;
         if(saude <= 0)
         {
+
+
             Instantiate(moeda, transform.position, transform.rotation);
 
-            gameObject.SetActive(false);
+            morte.Play();
 
-            //morte.Play();
+            gameObject.SetActive(false);
+            
             //Destroy(sprite);
             Destroy(gameObject);
         }
