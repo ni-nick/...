@@ -34339,8 +34339,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 352161665}
   falas:
-  - oi bom dia eu gosto de comer bolinoh de chuva
-  - oi bom dia eu perguntei alguma coisa?
+  - "Venezuelana: Nosso pais \xE9 rico em cultura, e muitas coisas bonitas"
+  - "Venezuelana: mas devido a circula\xE7\xE3o de informa\xE7\xF5es sensacionalistas,
+    a imagem de nosso pais \xE9 destruida."
+  - "Venezuelana: por isso \xE9 preciso sempre pesquisar antes de acreditar em tudo
+    que v\xEA!"
   typingSpeed: 0.07
   continuaButton: {fileID: 204244679}
 --- !u!4 &1336232702

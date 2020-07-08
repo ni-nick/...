@@ -187,7 +187,6 @@ public class Jogador : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 14f); // aumentar os números, aumenta a força do pulo no trampolim
         }
-
     }
 
     void OnCollisionExit2D(Collision2D collision2D)
@@ -258,5 +257,7 @@ public class Jogador : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+
 }
 
