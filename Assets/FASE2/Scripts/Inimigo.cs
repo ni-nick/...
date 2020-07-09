@@ -51,11 +51,12 @@ public class Inimigo : MonoBehaviour
         saude -= dano;
         if(saude <= 0)
         {
-
+            AudioSource[] allAudios = Camera.main.gameObject.GetComponents<AudioSource>();
+            allAudios[0].Play();
 
             Instantiate(moeda, transform.position, transform.rotation);
 
-            morte.Play();
+            //morte.Play();
 
             gameObject.SetActive(false);
             
@@ -72,6 +73,12 @@ public class Inimigo : MonoBehaviour
     // espera segundos antes de continuar 
     IEnumerator LevaDano()
     {
+      //  if (saude < 1)
+      //  {
+           // AudioSource[] allAudios = Camera.main.gameObject.GetComponents<AudioSource>();
+          //  allAudios[0].Play();
+            //morte.Play();
+      //  }
         sprite.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         sprite.color = Color.white;

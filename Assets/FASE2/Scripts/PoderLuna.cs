@@ -24,7 +24,10 @@ public class PoderLuna : MonoBehaviour
         Inimigo outroInimigo = collider2D.GetComponent<Inimigo>();
         if (outroInimigo != null)
         {
-
+            if (outroInimigo.saude  <= dano)
+            {
+                outroInimigo.morte.Play();
+            }
             outroInimigo.LevaDano(dano);
     
         }

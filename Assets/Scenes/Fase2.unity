@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -360,7 +360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27141521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.22, y: -0.2, z: 0}
+  m_LocalPosition: {x: -73.5, y: -0.2, z: 0}
   m_LocalScale: {x: 1.6225, y: 1.6225, z: 1.6225}
   m_Children: []
   m_Father: {fileID: 743405751}
@@ -515,7 +515,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 91
+  Priority: 21
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -7486,8 +7486,8 @@ GameObject:
   - component: {fileID: 801233701}
   - component: {fileID: 801233700}
   - component: {fileID: 801233704}
-  - component: {fileID: 801233705}
   - component: {fileID: 801233703}
+  - component: {fileID: 801233705}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7592,18 +7592,18 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801233699}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: de6bc8954e1251c4b854484dcd8df0a5, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_audioClip: {fileID: 8300000, guid: 3fdf12f063f1550419761c36c5e9224d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.88
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 164
+  Priority: 76
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -12773,7 +12773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211192410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.55, y: 22.7, z: 1.86}
+  m_LocalPosition: {x: -36.2, y: 24.8, z: 1.86}
   m_LocalScale: {x: 0.6356, y: 0.6153, z: 0.7}
   m_Children:
   - {fileID: 1026128130}
@@ -12946,7 +12946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284957348404b3748ace17c64798f8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 500
+  forcaPulo: 450
   velocidadeMax: 5
   Vida: 4
   Recompensas: 0
@@ -15812,7 +15812,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496927716}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de6bc8954e1251c4b854484dcd8df0a5, type: 3}
