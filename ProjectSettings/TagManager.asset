@@ -21,6 +21,7 @@ TagManager:
   - ZonaMorte3
   - MoedaGanhou
   - Oscuno
+  - Luz
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - Player
   - TiroInimigo
   - Inimigo
-  - 
+  - chao
   - 
   - 
   - 
