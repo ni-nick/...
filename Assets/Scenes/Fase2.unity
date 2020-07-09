@@ -5521,7 +5521,7 @@ GameObject:
   - component: {fileID: 565998563}
   - component: {fileID: 565998564}
   - component: {fileID: 565998565}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Auxiliar
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -10506,7 +10506,7 @@ GameObject:
   - component: {fileID: 1037763946}
   - component: {fileID: 1037763948}
   - component: {fileID: 1037763947}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Auxiliar
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -11559,7 +11559,7 @@ GameObject:
   - component: {fileID: 1120901335}
   - component: {fileID: 1120901334}
   - component: {fileID: 1120901333}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlataformaVertical
   m_TagString: plataformaMover
   m_Icon: {fileID: 0}
@@ -15700,7 +15700,7 @@ GameObject:
   - component: {fileID: 1494917776}
   - component: {fileID: 1494917778}
   - component: {fileID: 1494917777}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Auxiliar
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -17934,7 +17934,7 @@ GameObject:
   - component: {fileID: 1726638286}
   - component: {fileID: 1726638285}
   - component: {fileID: 1726638284}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlataformaVertical
   m_TagString: plataformaMover
   m_Icon: {fileID: 0}
@@ -19098,7 +19098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833146853}
   - component: {fileID: 1833146854}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: caveirasRoxa (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19178,7 +19178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835415481}
   - component: {fileID: 1835415482}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94175,7 +94175,7 @@ GameObject:
   - component: {fileID: 1950122720}
   - component: {fileID: 1950122719}
   - component: {fileID: 1950122721}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlataformaVertical
   m_TagString: plataformaMover
   m_Icon: {fileID: 0}
