@@ -9,6 +9,9 @@ public class Jogador2 : MonoBehaviour
     public float forcaPulo;
     public float velocidadeMax;
 
+    public LayerMask chao;
+    public Transform terra;
+
     public int Vida;
     public int Recompensas;
 
@@ -106,6 +109,8 @@ public class Jogador2 : MonoBehaviour
 
     void Update()
     {
+        isGround = Physics2D.Linecast(transform.position, terra.position, chao);
+
         if (Input.GetKeyDown(KeyCode.Q) && Time.time > nextfire)
         { 
             nextfire = Time.time + fireRate;
@@ -144,6 +149,10 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
+            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            l.intensity = 100;
+            l.range = 10;
+
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
         }
@@ -179,7 +188,8 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
-            isGround = true;
+       
+           // isGround = true;
         }
 
         if (collision2D.gameObject.CompareTag("trampolim"))
@@ -204,12 +214,12 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
-            isGround = false;
+           // isGround = false;
         }
 
         if (collision2D.gameObject.CompareTag("auxiliar"))
         {
-            isGround = false;
+           // isGround = false;
         }
 
     }
