@@ -1,0 +1,7 @@
+Me chamou? Clique 'Z' para ver as dicas!
+As teclas necessarias para o jogo sao as seguintes:
+As setas do teclado sao usadas para os movimentos.
+Para matar um inimigo, basta clicar na tecla "Q".
+Para Pausar o Jogo, basta clicar na tecla "ESC".
+Caso esquesa de algo, basta me chamar clicando na tecla "Z" para ver as dicas novamente. 
+Boa aventura!
