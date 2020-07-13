@@ -20,6 +20,9 @@ public class Jogador : MonoBehaviour
 
     public Rigidbody2D rbody;
 
+    public LayerMask chao;
+    public Transform terra;
+
     //sons da cena
     [SerializeField] private AudioSource pulo;
     [SerializeField] private AudioSource moeda;
@@ -99,7 +102,13 @@ public class Jogador : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision2D)
+    void Update()
+    {
+        isGround = Physics2D.Linecast(transform.position, terra.position, chao);
+
+    }
+
+        private void OnTriggerEnter2D(Collider2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("moeda"))
         { 
@@ -179,7 +188,7 @@ public class Jogador : MonoBehaviour
 
             if (collision2D.gameObject.CompareTag("plataforma"))
         {
-            isGround = true;
+           // isGround = true;
         }
 
 
@@ -193,7 +202,7 @@ public class Jogador : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
-            isGround = false;
+          //  isGround = false;
         }
     }
 

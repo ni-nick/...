@@ -199,7 +199,7 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("auxiliar"))
         {
-            isGround = true;
+          //  isGround = true;
         }
 
         if (collision2D.gameObject.CompareTag("Oscuno") && !levouDano)

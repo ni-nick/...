@@ -8423,6 +8423,36 @@ Transform:
   m_Father: {fileID: 2125943732}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &805225731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805225732}
+  m_Layer: 9
+  m_Name: Terra
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805225732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805225731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.57, y: -2.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1698066780}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811116952
 GameObject:
   m_ObjectHideFlags: 0
@@ -12785,7 +12815,7 @@ GameObject:
   - component: {fileID: 1260956616}
   - component: {fileID: 1260956617}
   - component: {fileID: 1260956619}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tilemap
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -39161,6 +39191,7 @@ Transform:
   m_Children:
   - {fileID: 53294774}
   - {fileID: 1046307602}
+  - {fileID: 805225732}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39184,6 +39215,10 @@ MonoBehaviour:
   TextRecompensas: {fileID: 869192125}
   isGround: 0
   rbody: {fileID: 0}
+  chao:
+    serializedVersion: 2
+    m_Bits: 4096
+  terra: {fileID: 805225732}
   pulo: {fileID: 1698066787}
   moeda: {fileID: 1698066788}
   morte: {fileID: 1698066789}
