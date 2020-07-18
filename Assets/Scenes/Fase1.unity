@@ -35437,7 +35437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1343153103}
   - component: {fileID: 1343153104}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: aux
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -39186,7 +39186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.4, y: 2.5, z: -0}
+  m_LocalPosition: {x: 154.46, y: 2.5, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -39207,7 +39207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 450
+  forcaPulo: 480
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
@@ -43110,7 +43110,7 @@ GameObject:
   - component: {fileID: 2085572874}
   - component: {fileID: 2085572876}
   - component: {fileID: 2085572875}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plataforma larga
   m_TagString: plataformaMover
   m_Icon: {fileID: 0}
@@ -43233,7 +43233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf1b4a7b4480da479c325136a74ec03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1698066779}
+  terra: {fileID: 0}
 --- !u!1 &2090765666
 GameObject:
   m_ObjectHideFlags: 0

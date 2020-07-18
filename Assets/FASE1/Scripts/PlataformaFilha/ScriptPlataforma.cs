@@ -5,13 +5,13 @@ using UnityEngine;
 public class ScriptPlataforma : MonoBehaviour // script para jogador virar filho da plataforma
 {
 
-    public GameObject player;
+    public GameObject terra;
 
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if(collider2D.gameObject == player)
+        if(collider2D.gameObject == terra)
         {
-            player.transform.parent = transform;
+            terra.transform.parent = transform;
         }
         
     }
@@ -19,9 +19,9 @@ public class ScriptPlataforma : MonoBehaviour // script para jogador virar filho
 
     private void OnTriggerExit2D(Collider2D collider2D)
     {
-        if (collider2D.gameObject == player)
+        if (collider2D.gameObject == terra)
         {
-            player.transform.parent = null;
+            terra.transform.parent = null;
         }
 
     }

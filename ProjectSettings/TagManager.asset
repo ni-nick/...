@@ -22,6 +22,7 @@ TagManager:
   - MoedaGanhou
   - Oscuno
   - Luz
+  - terra
   layers:
   - Default
   - TransparentFX
