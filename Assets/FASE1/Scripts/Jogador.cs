@@ -191,6 +191,11 @@ public class Jogador : MonoBehaviour
            // isGround = true;
         }
 
+        if (collision2D.gameObject.CompareTag("plataformaMover"))
+        {
+            this.transform.parent = collision2D.transform;
+        }
+
 
         if (collision2D.gameObject.CompareTag("trampolim"))
         {
@@ -203,6 +208,11 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
           //  isGround = false;
+        }
+
+        if (collision2D.gameObject.CompareTag("plataformaMover"))
+        {
+            this.transform.parent = null;
         }
     }
 

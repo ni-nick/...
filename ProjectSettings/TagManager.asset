@@ -23,6 +23,7 @@ TagManager:
   - Oscuno
   - Luz
   - terra
+  - mover
   layers:
   - Default
   - TransparentFX

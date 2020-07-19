@@ -7,7 +7,7 @@ public class ScriptPlataforma : MonoBehaviour // script para jogador virar filho
 
     public GameObject terra;
 
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    private void OnCollisionEnter2D(Collision2D collider2D)
     {
         if(collider2D.gameObject == terra)
         {
@@ -17,7 +17,7 @@ public class ScriptPlataforma : MonoBehaviour // script para jogador virar filho
     }
 
 
-    private void OnTriggerExit2D(Collider2D collider2D)
+    private void OnCollisionExit2D(Collision2D collider2D)
     {
         if (collider2D.gameObject == terra)
         {
