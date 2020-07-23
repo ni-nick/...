@@ -39186,7 +39186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 162.48, y: 2.5, z: -0}
+  m_LocalPosition: {x: -46.4, y: 2.5, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -39227,7 +39227,7 @@ MonoBehaviour:
   player2: {fileID: 1698066780}
   PontoRespwn2: {fileID: 1017075792}
   danoTempo: 1
-  anim: {fileID: 0}
+  anim: {fileID: 1698066785}
 --- !u!61 &1698066782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43111,7 +43111,7 @@ GameObject:
   - component: {fileID: 2085572875}
   m_Layer: 12
   m_Name: PlataformaMovel
-  m_TagString: plataformaMover
+  m_TagString: mover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

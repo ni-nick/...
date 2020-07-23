@@ -193,7 +193,7 @@ public class Jogador : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("plataformaMover"))
         {
-            this.transform.parent = collision2D.transform;
+          this.transform.parent = collision2D.transform;
         }
 
 
@@ -213,7 +213,7 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("plataformaMover"))
         {
             this.transform.parent = null;
-        }
+       }
     }
 
     IEnumerator LevouDanoInimigo()
