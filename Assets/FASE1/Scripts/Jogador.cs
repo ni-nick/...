@@ -191,10 +191,15 @@ public class Jogador : MonoBehaviour
            // isGround = true;
         }
 
-        if (collision2D.gameObject.CompareTag("plataformaMover"))
+        if (collision2D.gameObject.CompareTag("auxiliar"))
         {
-          this.transform.parent = collision2D.transform;
+            //  isGround = true;
         }
+
+        //if (collision2D.gameObject.CompareTag("plataformaMover"))
+        //{
+        // this.transform.parent = collision2D.transform;
+        //}
 
 
         if (collision2D.gameObject.CompareTag("trampolim"))
@@ -210,10 +215,15 @@ public class Jogador : MonoBehaviour
           //  isGround = false;
         }
 
-        if (collision2D.gameObject.CompareTag("plataformaMover"))
+        if (collision2D.gameObject.CompareTag("auxiliar"))
         {
-            this.transform.parent = null;
-       }
+            //  isGround = true;
+        }
+
+        //    if (collision2D.gameObject.CompareTag("plataformaMover"))
+        //   {
+        //        this.transform.parent = null;
+        // }
     }
 
     IEnumerator LevouDanoInimigo()

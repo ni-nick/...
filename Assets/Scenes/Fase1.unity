@@ -2276,7 +2276,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 760949934}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &193719555
 GameObject:
@@ -2508,7 +2508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -46.81, y: 16}
+  m_AnchoredPosition: {x: -46.81, y: 18}
   m_SizeDelta: {x: 93.62, y: 23.042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204244681
@@ -7206,8 +7206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.599976, y: -146}
-  m_SizeDelta: {x: -105.6, y: -300.3}
+  m_AnchoredPosition: {x: 4.2, y: -137.9}
+  m_SizeDelta: {x: -79.6, y: -284.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656004479
 MonoBehaviour:
@@ -8096,9 +8096,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760949934}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: PlataformaHorizontal
-  m_TagString: mover
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8114,9 +8114,9 @@ Transform:
   m_LocalPosition: {x: 157.68, y: -2.1203628, z: -0.018554688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2085572873}
   - {fileID: 2023678404}
   - {fileID: 184168668}
-  - {fileID: 2085572873}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8435,7 +8435,7 @@ GameObject:
   m_Layer: 9
   m_Name: Terra
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8447,7 +8447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805225731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.57, y: -2.04, z: 0}
+  m_LocalPosition: {x: -0.57, y: -2.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1698066780}
@@ -12184,7 +12184,7 @@ GameObject:
   - component: {fileID: 1218241276}
   - component: {fileID: 1218241275}
   m_Layer: 0
-  m_Name: Velhinho
+  m_Name: Venezuelana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12227,12 +12227,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300002, guid: f10eb65273691764a95c173e0adf9916, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13f961035943d844796cd1d2d2acd321, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.64, y: 2.08}
+  m_Size: {x: 0.83, y: 1.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12246,8 +12246,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218241274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.24, y: -7.645, z: 0}
-  m_LocalScale: {x: 1.3455191, y: 1.292513, z: 1}
+  m_LocalPosition: {x: 123.09, y: -7.68, z: 0}
+  m_LocalScale: {x: 1.9687263, y: 1.8911692, z: 1.4631723}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
@@ -35137,7 +35137,7 @@ GameObject:
   - component: {fileID: 1336232704}
   - component: {fileID: 1336232703}
   m_Layer: 0
-  m_Name: DialogoMenager Velhinho
+  m_Name: DialogoMenager Venezuelana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35162,7 +35162,7 @@ MonoBehaviour:
     a imagem de nosso pais \xE9 destruida."
   - "Venezuelana: por isso \xE9 preciso sempre pesquisar antes de acreditar em tudo
     que v\xEA!"
-  typingSpeed: 0.07
+  typingSpeed: 0.05
   continuaButton: {fileID: 204244679}
 --- !u!4 &1336232702
 Transform:
@@ -35439,7 +35439,7 @@ GameObject:
   - component: {fileID: 1343153104}
   m_Layer: 12
   m_Name: aux
-  m_TagString: plataformaMover
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35452,7 +35452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343153102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.029956514, y: 0.21134876, z: 5.54}
+  m_LocalPosition: {x: -0.029956514, y: 0.08, z: 5.54}
   m_LocalScale: {x: 0.8831693, y: 1.320929, z: 1}
   m_Children: []
   m_Father: {fileID: 2085572873}
@@ -35471,7 +35471,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04172778, y: -0.16712058}
+  m_Offset: {x: 0.025133967, y: -0.11738921}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -35482,7 +35482,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0754747, y: 0.23224849}
+  m_Size: {x: 1.1086624, y: 0.13278575}
   m_EdgeRadius: 0
 --- !u!1 &1343615783
 GameObject:
@@ -39167,7 +39167,6 @@ GameObject:
   - component: {fileID: 1698066781}
   - component: {fileID: 1698066783}
   - component: {fileID: 1698066784}
-  - component: {fileID: 1698066782}
   - component: {fileID: 1698066787}
   - component: {fileID: 1698066788}
   - component: {fileID: 1698066789}
@@ -39186,7 +39185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46, y: 5.1, z: -0}
+  m_LocalPosition: {x: 120.51, y: -8.15, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -39207,7 +39206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 480
+  forcaPulo: 250
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
@@ -39228,32 +39227,6 @@ MonoBehaviour:
   PontoRespwn2: {fileID: 1017075792}
   danoTempo: 1
   anim: {fileID: 1698066785}
---- !u!61 &1698066782
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698066779}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.6023941, y: -1.2066417}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.4, y: 6.4}
-    newSize: {x: 8.4, y: 6.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3290939, y: 1.1762552}
-  m_EdgeRadius: 0
 --- !u!70 &1698066783
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -39267,8 +39240,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5092735, y: 0.27585268}
-  m_Size: {x: 2.9677658, y: 4.1985064}
+  m_Offset: {x: -0.5092735, y: 0.34577748}
+  m_Size: {x: 2.9677658, y: 4.0586576}
   m_Direction: 0
 --- !u!50 &1698066784
 Rigidbody2D:
@@ -42190,7 +42163,7 @@ GameObject:
   - component: {fileID: 2021270181}
   - component: {fileID: 2021270184}
   m_Layer: 5
-  m_Name: CanvasVelhinho
+  m_Name: CanvasVenezuelana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42316,7 +42289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 760949934}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024204456
 GameObject:
@@ -43108,14 +43081,28 @@ GameObject:
   - component: {fileID: 2085572873}
   - component: {fileID: 2085572872}
   - component: {fileID: 2085572874}
+  - component: {fileID: 2085572871}
   - component: {fileID: 2085572875}
   m_Layer: 12
   m_Name: PlataformaMovel
-  m_TagString: mover
+  m_TagString: plataformaMover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2085572871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085572870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1b4a7b4480da479c325136a74ec03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1698066779}
 --- !u!212 &2085572872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43177,7 +43164,7 @@ Transform:
   m_Children:
   - {fileID: 1343153103}
   m_Father: {fileID: 760949934}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2085572874
 MonoBehaviour:
@@ -43207,7 +43194,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008595347, y: 0.19845304}
+  m_Offset: {x: -0.013954997, y: 0.13715819}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -43218,7 +43205,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1784041, y: 0.1663341}
+  m_Size: {x: 1.2963326, y: 0.043744296}
   m_EdgeRadius: 0
 --- !u!1 &2090765666
 GameObject:
