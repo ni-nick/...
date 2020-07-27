@@ -142,6 +142,14 @@ public class Jogador2 : MonoBehaviour
             TextRecompensas.text = Recompensas.ToString();
         }
 
+        if (collision2D.gameObject.CompareTag("Vida"))
+        {
+            //moeda.Play();
+            Destroy(collision2D.gameObject);
+            Vida +=5;
+            TextVida.text = Vida.ToString();
+        }
+
         if (collision2D.gameObject.CompareTag("MoedaGanhou"))
         {
             SceneManager.LoadScene("YouWin");
