@@ -44,18 +44,26 @@ public class Jogador2 : MonoBehaviour
     [SerializeField] private AudioSource moeda;
     [SerializeField] private AudioSource morte; // morte do inimigo 
 
+ //   public bool morreu = false;
+
     //levar dano do oscuno e do inimigo
     public float danoTempo = 1f;
     private bool levouDano = false;
-    
+
     void Start()
     {
         TextVida.text = Vida.ToString();
         TextRecompensas.text = Recompensas.ToString();
         //rbody = GetComponent<Rigidbody2D>();
+
+     //   if (!morreu) {
+      //      Vida = PlayerPrefs.GetInt("Vida");
+       //     morreu = false;
+     //   }
     }
 
-    void FixedUpdate(){
+
+        void FixedUpdate(){
 
         float movimento = Input.GetAxis("Horizontal");
 
@@ -175,6 +183,7 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte3"))
         {
             player3.transform.position = PontoRespwn3.transform.position;
+
             StartCoroutine(LevouDanoInimigo());
         }
 
@@ -262,7 +271,13 @@ public class Jogador2 : MonoBehaviour
     IEnumerator LevouDanoInimigo()
     {
         levouDano = true;
-        Vida--;
+        Vida-=1;
+        
+        Debug.Log("Vida: " + Vida.ToString());
+
+      // morreu = true;
+      //  PlayerPrefs.SetInt("Vida", Vida);
+
         TextVida.text = Vida.ToString();
         if (Vida == 0)
         {

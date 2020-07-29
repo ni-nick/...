@@ -13141,7 +13141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211192410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 248.54, y: -43.79, z: 1.86}
+  m_LocalPosition: {x: 307.9, y: -41.1, z: 1.86}
   m_LocalScale: {x: 0.6356, y: 0.6153, z: 0.7}
   m_Children:
   - {fileID: 1026128130}
@@ -13315,7 +13315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284957348404b3748ace17c64798f8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 350
+  forcaPulo: 450
   velocidadeMax: 5
   chao:
     serializedVersion: 2
@@ -13341,6 +13341,7 @@ MonoBehaviour:
   pulo: {fileID: 1211192419}
   moeda: {fileID: 1211192418}
   morte: {fileID: 1211192413}
+  novaFase: 0
   danoTempo: 1
 --- !u!82 &1211192418
 AudioSource:
