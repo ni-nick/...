@@ -13341,7 +13341,6 @@ MonoBehaviour:
   pulo: {fileID: 1211192419}
   moeda: {fileID: 1211192418}
   morte: {fileID: 1211192413}
-  novaFase: 0
   danoTempo: 1
 --- !u!82 &1211192418
 AudioSource:
@@ -144775,7 +144774,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000823098}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
