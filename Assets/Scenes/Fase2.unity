@@ -13276,7 +13276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211192410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46, y: 28.1, z: 1.86}
+  m_LocalPosition: {x: 39.5, y: 28.1, z: 1.86}
   m_LocalScale: {x: 0.6356, y: 0.6153, z: 0.7}
   m_Children:
   - {fileID: 1026128130}
@@ -13416,8 +13416,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.307312, y: 0.3317765}
-  m_Size: {x: 2.5312042, y: 4.284221}
+  m_Offset: {x: -0.34667173, y: 0.33177653}
+  m_Size: {x: 2.255689, y: 4.284221}
   m_Direction: 0
 --- !u!95 &1211192416
 Animator:
@@ -14802,7 +14802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6fc8e60cf660c46b071d9bc82827ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saude: 3
+  saude: 1
   velocidade: 45
   diatanciaAtaque: 3
   moeda: {fileID: 5767511539134365489, guid: 1ad12c6eda08a7246a53b7a19f39b2a6, type: 3}

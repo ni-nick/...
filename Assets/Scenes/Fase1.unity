@@ -9726,7 +9726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976974624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 149.08, y: 9.125, z: 0.4}
+  m_LocalPosition: {x: 149.531, y: 9.125, z: 0.4}
   m_LocalScale: {x: 0.54552, y: 0.54552, z: 0.54552}
   m_Children: []
   m_Father: {fileID: 671928489}
@@ -43237,7 +43237,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13112259, y: -2.82135}
+  m_Offset: {x: 4.2134132, y: -2.5009193}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -43248,7 +43248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12163544, y: 2.1842709}
+  m_Size: {x: 8.810707, y: 2.8251324}
   m_EdgeRadius: 0
 --- !u!114 &1336232704
 MonoBehaviour:
@@ -45187,7 +45187,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06528264, y: 1.308858}
+  m_Offset: {x: -0.18047982, y: 1.308858}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -45198,7 +45198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6284804, y: 2.2537863}
+  m_Size: {x: 2.8588748, y: 2.2537863}
   m_EdgeRadius: 0
 --- !u!1001 &1534490555
 PrefabInstance:
@@ -47252,7 +47252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 500
+  forcaPulo: 200
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
@@ -47286,8 +47286,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5092735, y: 0.34577748}
-  m_Size: {x: 2.9677658, y: 4.0586576}
+  m_Offset: {x: -0.41228426, y: 0.34577748}
+  m_Size: {x: 2.2376807, y: 4.0586576}
   m_Direction: 0
 --- !u!50 &1698066784
 Rigidbody2D:

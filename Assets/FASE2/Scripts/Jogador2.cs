@@ -175,6 +175,11 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
+
+            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            l.intensity = 100;
+            l.range = 10;
+
             player2.transform.position = PontoRespwn2.transform.position;
 
             StartCoroutine(LevouDanoInimigo());
@@ -182,6 +187,11 @@ public class Jogador2 : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("ZonaMorte3"))
         {
+
+            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            l.intensity = 100;
+            l.range = 10;
+
             player3.transform.position = PontoRespwn3.transform.position;
 
             StartCoroutine(LevouDanoInimigo());
@@ -197,7 +207,11 @@ public class Jogador2 : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-            
+
+            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            l.intensity = 100;
+            l.range = 10;
+
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
 
@@ -249,7 +263,7 @@ public class Jogador2 : MonoBehaviour
         if(Vida == 0)
         {
             anim.SetTrigger("morrendo"); 
-            Invoke("LunaMorte",2f);
+            Invoke("LunaMorte",1f);
 
         }
 
@@ -271,7 +285,7 @@ public class Jogador2 : MonoBehaviour
     IEnumerator LevouDanoInimigo()
     {
         levouDano = true;
-        Vida-=1;
+        Vida-=2;
         
         Debug.Log("Vida: " + Vida.ToString());
 
@@ -282,7 +296,7 @@ public class Jogador2 : MonoBehaviour
         if (Vida == 0)
         {
             anim.SetTrigger("morrendo");
-            Invoke("LunaMorte", 2f);
+            Invoke("LunaMorte", 1f);
 
         }
 

@@ -146,7 +146,7 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("Vida"))
         {
             Destroy(collision2D.gameObject);
-           Vida++;
+            Vida++;
             TextVida.text = Vida.ToString();
 
         }
@@ -235,7 +235,7 @@ public class Jogador : MonoBehaviour
         if (Vida == 0)
         {
             anim.SetTrigger("morrendo");
-            Invoke("LunaMorte", 2f);
+            Invoke("LunaMorte", 1f);
 
         }
 
@@ -263,7 +263,7 @@ public class Jogador : MonoBehaviour
         if (Vida == 0)
         {
             anim.SetTrigger("morrendo");
-            Invoke("LunaMorte", 2f);
+            Invoke("LunaMorte", 1f);
 
         }
 
