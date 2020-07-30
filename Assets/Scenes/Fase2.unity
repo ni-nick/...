@@ -1191,6 +1191,7 @@ Transform:
   - {fileID: 2025008215}
   - {fileID: 49327780}
   - {fileID: 1141289049}
+  - {fileID: 109518491}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1344,6 +1345,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &109518490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109518491}
+  - component: {fileID: 109518492}
+  m_Layer: 0
+  m_Name: NGruda (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109518491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109518490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 77.6, y: 38.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 74200680}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &109518492
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109518490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.0273476, y: -15.130035}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0546951, y: 58.531464}
+  m_EdgeRadius: 0
 --- !u!1 &120078046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2997,7 +3055,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 574c8e04b73ee144e973b61815b5f7e9, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3321,7 +3379,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 574c8e04b73ee144e973b61815b5f7e9, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17651,6 +17709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620587969}
   - component: {fileID: 1620587970}
+  - component: {fileID: 1620587971}
   m_Layer: 0
   m_Name: ZonaMorte (1)
   m_TagString: ZonaMorte
@@ -17699,6 +17758,26 @@ EdgeCollider2D:
   - {x: 14.343552, y: -16.41697}
   - {x: 19.997066, y: -16.433105}
   - {x: 19.812504, y: 4.0108414}
+--- !u!68 &1620587971
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620587968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 27.592834, y: 9.3520355}
+  - {x: 27.588531, y: 5.9491653}
+  - {x: 31.027634, y: 5.9504395}
+  - {x: 31.026394, y: 8.700432}
 --- !u!1 &1627969187
 GameObject:
   m_ObjectHideFlags: 0
@@ -20185,7 +20264,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 574c8e04b73ee144e973b61815b5f7e9, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -143122,7 +143201,7 @@ EdgeCollider2D:
   - {x: 81.69896, y: 11.1446495}
   - {x: 83.91504, y: 11.1293125}
   - {x: 83.91945, y: 9.99015}
-  - {x: 88.08165, y: 9.974705}
+  - {x: 89.562, y: 9.974705}
 --- !u!68 &1850913082
 EdgeCollider2D:
   m_ObjectHideFlags: 0
