@@ -6,6 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Abertura.unity
+    guid: b558ddc02cb9bec46b76587f30f91071
+  - enabled: 1
     path: Assets/Scenes/Historia.unity
     guid: 7c6b2de4f033b814597d47bec08b460b
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 2f14e35b00392df4495105353a514490
+  - enabled: 1
+    path: Assets/Scenes/Fase1.unity
+    guid: 3572dae5a441de847994636f01d15fd5
+  - enabled: 1
+    path: Assets/Scenes/DialogoMaria.unity
+    guid: 230e82e4016f13047a5091d149730a14
+  - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: 7e460a72c2c5e2042be0f9aa5ec81cfb
+  - enabled: 1
+    path: Assets/Scenes/DialogoDamadaMorte.unity
+    guid: c1066b2ce63d72540b221c2ea20aec84
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0f350e2b6607ec44ca8017139c3805c3
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: 0170b7516b211e14bb9ac8e6ca592986
   m_configObjects: {}

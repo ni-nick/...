@@ -5460,12 +5460,12 @@ EdgeCollider2D:
   m_Points:
   - {x: -12.662842, y: -4.1882353}
   - {x: -9.466446, y: -4.1635017}
-  - {x: 0.34597778, y: -4.1582136}
-  - {x: 0.3305359, y: 3.0510092}
-  - {x: 2.1847687, y: 3.0734305}
+  - {x: 0.9073944, y: -4.2283907}
+  - {x: 0.89746094, y: 2.8710356}
+  - {x: 2.1847687, y: 2.8754597}
   - {x: 2.1696167, y: -3.1249352}
-  - {x: 3.6503906, y: -3.133462}
-  - {x: 3.5486908, y: 4.8721824}
+  - {x: 4.406952, y: -3.1172109}
+  - {x: 4.348175, y: 4.873983}
   - {x: 4.9500275, y: 4.872459}
   - {x: 5.0464478, y: -3.1151228}
   - {x: 7.9677734, y: -3.1325493}
@@ -8435,7 +8435,7 @@ GameObject:
   m_Layer: 9
   m_Name: Terra
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -47231,7 +47231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 120.51, y: -8.15, z: -0}
+  m_LocalPosition: {x: 191.3, y: 8.5, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -47252,7 +47252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 250
+  forcaPulo: 500
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
@@ -49669,9 +49669,9 @@ MonoBehaviour:
   - 'Luna: E o que estou fazendo aqui, Tuinchi?'
   - "Tuinch: Sua miss\xE3o aqui \xE9 resgatar a entidade Maria Lionza.  Ela foi presa
     pelo Oscuno e necessita de sua ajuda para sair!"
-  - "Tuinchi: Para isso voc\xEA vai ter\xE1 que enfrentar v\xE1rios inimigos que Oscuno
+  - "Tuinchi: Para isso voc\xEA ter\xE1 que enfrentar v\xE1rios inimigos que Oscuno
     colocou por algumas partes do mundo, eles est\xE3o roubando a felicidade e criando
-    disc\xF3rdia entre os cidad\xE3os ent\xE3o tome cuidado!"
+    disc\xF3rdia entre os cidad\xE3os, ent\xE3o tome cuidado!"
   - "Tuinchi:  Lembre-se, sempre que precisar pressione \u2018Z\u2019 para conversar
     comigo e se quiser acessar o menu, por favor tecle \u2018ESC\u2019 ."
   typingSpeed: 0.05
