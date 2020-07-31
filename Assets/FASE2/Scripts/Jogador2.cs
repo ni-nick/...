@@ -287,7 +287,7 @@ public class Jogador2 : MonoBehaviour
         levouDano = true;
         Vida-=2;
         
-        Debug.Log("Vida: " + Vida.ToString());
+        ////Debug.Log("Vida: " + Vida.ToString());
 
       // morreu = true;
       //  PlayerPrefs.SetInt("Vida", Vida);
