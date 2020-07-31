@@ -13334,7 +13334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211192410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.52, y: 28.1, z: 1.86}
+  m_LocalPosition: {x: -45.93, y: 27.08, z: 1.86}
   m_LocalScale: {x: 0.6356, y: 0.6153, z: 0.7}
   m_Children:
   - {fileID: 1026128130}
@@ -13508,7 +13508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284957348404b3748ace17c64798f8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 430
+  forcaPulo: 600
   velocidadeMax: 5
   chao:
     serializedVersion: 2
@@ -15490,7 +15490,7 @@ GameObject:
   m_Layer: 9
   m_Name: Terra
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15502,7 +15502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390392201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.63, y: -2, z: 0}
+  m_LocalPosition: {x: -0.63, y: -1.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1211192412}

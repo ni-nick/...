@@ -822,7 +822,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 13.746723, y: -4.531488}
+  m_Offset: {x: 13.746723, y: -4.879273}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -833,7 +833,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.77826, y: 11.767325}
+  m_Size: {x: 18.77826, y: 11.071755}
   m_EdgeRadius: 0
 --- !u!61 &63487321
 BoxCollider2D:
@@ -8096,9 +8096,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760949934}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlataformaHorizontal
-  m_TagString: Untagged
+  m_TagString: plataformaMover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8435,7 +8435,7 @@ GameObject:
   m_Layer: 9
   m_Name: Terra
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8447,7 +8447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805225731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.57, y: -2.02, z: 0}
+  m_LocalPosition: {x: -0.57, y: -1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1698066780}
@@ -43490,7 +43490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1343153103
 Transform:
   m_ObjectHideFlags: 0
@@ -43518,7 +43518,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025133967, y: -0.11738921}
+  m_Offset: {x: 0.025133967, y: -0.076934576}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -43529,7 +43529,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1086624, y: 0.13278575}
+  m_Size: {x: 1.1086624, y: 0.21369505}
   m_EdgeRadius: 0
 --- !u!1 &1343615783
 GameObject:
@@ -47232,7 +47232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698066779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.37, y: 8.5, z: -0}
+  m_LocalPosition: {x: -44.9, y: 2.73, z: -0}
   m_LocalScale: {x: 0.4625, y: 0.45625, z: 0.5}
   m_Children:
   - {fileID: 53294774}
@@ -47253,7 +47253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 430
+  forcaPulo: 505
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
@@ -51132,7 +51132,7 @@ GameObject:
   - component: {fileID: 2085572875}
   m_Layer: 12
   m_Name: PlataformaMovel
-  m_TagString: plataformaMover
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51238,10 +51238,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.013954997, y: 0.13715819}
+  m_Offset: {x: -0.013954997, y: 0.07074013}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -51252,7 +51252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2963326, y: 0.043744296}
+  m_Size: {x: 1.2963326, y: 0.069219925}
   m_EdgeRadius: 0
 --- !u!1 &2090765666
 GameObject:
