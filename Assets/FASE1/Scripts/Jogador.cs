@@ -183,7 +183,7 @@ public class Jogador : MonoBehaviour
         if (collision2D.gameObject.CompareTag("Inimigos2"))
         {
             player2.transform.position = PontoRespwn2.transform.position;
-            StartCoroutine(LevouDanoInimigo2());
+            StartCoroutine(LevouDanoInimigo());
         }
 
             if (collision2D.gameObject.CompareTag("plataforma"))
@@ -260,7 +260,7 @@ public class Jogador : MonoBehaviour
         levouDano = true;
         Vida-=2;
         TextVida.text = Vida.ToString();
-        if (Vida == 0)
+        if (Vida >= 0)
         {
             anim.SetTrigger("morrendo");
             Invoke("LunaMorte", 1f);

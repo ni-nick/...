@@ -10,6 +10,12 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+    public void Gameover2()
+    {
+        SceneManager.LoadScene("GameOver2");
+    }
+
     public void start()
     {
         SceneManager.LoadScene("Fase1");

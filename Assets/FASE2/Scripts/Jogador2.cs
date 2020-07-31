@@ -317,7 +317,7 @@ public class Jogador2 : MonoBehaviour
 
     void LunaMorte()
     {
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver2");
     }
 
 
