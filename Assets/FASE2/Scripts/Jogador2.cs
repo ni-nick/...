@@ -166,8 +166,8 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte"))
         {
             Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
-            l.intensity = 100;
-            l.range = 10;
+            l.intensity = 7;
+            l.range = 13;
 
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
@@ -176,24 +176,22 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("ZonaMorte2"))
         {
 
-            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
-            l.intensity = 100;
-            l.range = 10;
+            Light y = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            y.intensity = 7;
+            y.range = 13;
 
             player2.transform.position = PontoRespwn2.transform.position;
-
             StartCoroutine(LevouDanoInimigo());
         }
 
         if (collision2D.gameObject.CompareTag("ZonaMorte3"))
         {
 
-            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
-            l.intensity = 100;
-            l.range = 10;
+           // Light p = GameObject.FindWithTag("Luz").GetComponent<Light>();
+           // p.intensity = 7;
+          //  p.range = 13;
 
             player3.transform.position = PontoRespwn3.transform.position;
-
             StartCoroutine(LevouDanoInimigo());
         }
 
@@ -208,9 +206,9 @@ public class Jogador2 : MonoBehaviour
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
 
-            Light l = GameObject.FindWithTag("Luz").GetComponent<Light>();
-            l.intensity = 100;
-            l.range = 10;
+            Light k = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            k.intensity = 7;
+            k.range = 13;
 
             player.transform.position = PontoRespwn.transform.position;
             StartCoroutine(LevouDanoInimigo());
