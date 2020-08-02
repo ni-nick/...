@@ -177,8 +177,8 @@ public class Jogador2 : MonoBehaviour
         {
 
             Light y = GameObject.FindWithTag("Luz").GetComponent<Light>();
-            y.intensity = 7;
-            y.range = 13;
+            y.intensity = 8;
+            y.range = 12;
 
             player2.transform.position = PontoRespwn2.transform.position;
             StartCoroutine(LevouDanoInimigo());
