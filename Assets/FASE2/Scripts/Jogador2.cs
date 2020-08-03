@@ -215,6 +215,18 @@ public class Jogador2 : MonoBehaviour
 
         }
 
+        if (collision2D.gameObject.CompareTag("Inimigos2"))
+        {
+
+            Light j = GameObject.FindWithTag("Luz").GetComponent<Light>();
+            j.intensity = 7;
+            j.range = 13;
+
+            player2.transform.position = PontoRespwn2.transform.position;
+            StartCoroutine(LevouDanoInimigo());
+
+        }
+
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
        
