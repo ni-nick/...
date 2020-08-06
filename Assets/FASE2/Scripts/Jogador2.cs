@@ -94,9 +94,9 @@ public class Jogador2 : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGround)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            rigidbody.AddForce(new Vector2(0, forcaPulo));
+            rigidbody.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);
             pulo.Play();
         }
 
@@ -148,6 +148,24 @@ public class Jogador2 : MonoBehaviour
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
+
+            if (Recompensas == 10)
+            {
+                Vida+=1;
+                TextVida.text = Vida.ToString();
+            }
+
+            if (Recompensas == 20)
+            {
+                Vida += 1;
+                TextVida.text = Vida.ToString();
+            }
+
+            if (Recompensas == 30)
+            {
+                Vida += 2;
+                TextVida.text = Vida.ToString();
+            }
         }
 
         if (collision2D.gameObject.CompareTag("Vida"))

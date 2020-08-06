@@ -34,6 +34,8 @@ public class Jogador : MonoBehaviour
     [SerializeField] public Transform player2;
     [SerializeField] public Transform PontoRespwn2;
 
+    //public Transform transform;
+
     //levar dano do inimigo
     public float danoTempo = 1f;
     private bool levouDano = false;
@@ -45,6 +47,7 @@ public class Jogador : MonoBehaviour
         TextRecompensas.text = Recompensas.ToString();
         rbody = GetComponent<Rigidbody2D>();
         //audio = GetComponent<AudioSource>();
+       //transform = GetComponent<Transform>();
     }
 
 
@@ -81,9 +84,9 @@ public class Jogador : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGround) // pulo
+        if (Input.GetKeyDown(KeyCode.UpArrow)) // pulo
         {
-            rigidbody.AddForce(new Vector2(0, forcaPulo));
+            rigidbody.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);
             pulo.Play();
         }
 
@@ -108,21 +111,39 @@ public class Jogador : MonoBehaviour
 
     }
 
-        private void OnTriggerEnter2D(Collider2D collision2D)
+    private void OnTriggerEnter2D(Collider2D collision2D)
     {
         if (collision2D.gameObject.CompareTag("moeda"))
-        { 
+        {
             moeda.Play();
             Destroy(collision2D.gameObject);
             Recompensas++;
             TextRecompensas.text = Recompensas.ToString();
+
+            if (Recompensas == 10)
+            {
+                Vida += 1;
+                TextVida.text = Vida.ToString();
+            }
+
+            if (Recompensas == 20)
+            {
+                Vida += 1;
+                TextVida.text = Vida.ToString();
+            }
+
+            if (Recompensas == 30)
+            {
+                Vida += 2;
+                TextVida.text = Vida.ToString();
+            }
         }
 
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
-           
+
             rbody.velocity = new Vector2(rbody.velocity.x, 0.0f);
-            rbody.AddForce(new Vector2(0, forcaPulo/2));
+            rbody.AddForce(new Vector2(0, forcaPulo / 2));
 
             morte.Play();
             Destroy(collision2D.gameObject);
@@ -140,7 +161,7 @@ public class Jogador : MonoBehaviour
             morte.Play();
 
             Destroy(collision2D.gameObject);
-            Recompensas+=2;
+            Recompensas += 2;
             TextRecompensas.text = Recompensas.ToString();
 
         }
@@ -175,6 +196,11 @@ public class Jogador : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision2D)
     {
+        //if (collision2D.gameObject.CompareTag("plataformaMover"))
+       // {
+         //   transform.parent = collision2D.transform;
+        //}
+
         if (collision2D.gameObject.CompareTag("Inimigos"))
         {
             player.transform.position = PontoRespwn.transform.position;
@@ -191,17 +217,13 @@ public class Jogador : MonoBehaviour
             if (collision2D.gameObject.CompareTag("plataforma"))
         {
            // isGround = true;
+            
         }
 
         if (collision2D.gameObject.CompareTag("auxiliar"))
         {
             //  isGround = true;
         }
-
-        //if (collision2D.gameObject.CompareTag("plataformaMover"))
-        //{
-        // this.transform.parent = collision2D.transform;
-        //}
 
 
         if (collision2D.gameObject.CompareTag("trampolim"))
@@ -212,9 +234,15 @@ public class Jogador : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision2D)
     {
+
+        //if (collision2D.gameObject.CompareTag("plataformaMover"))
+      //  {
+         //   transform.parent = null;
+        //}
+
         if (collision2D.gameObject.CompareTag("plataforma"))
         {
-          //  isGround = false;
+            //  isGround = false;
         }
 
         if (collision2D.gameObject.CompareTag("auxiliar"))
@@ -222,10 +250,10 @@ public class Jogador : MonoBehaviour
             //  isGround = true;
         }
 
-        //    if (collision2D.gameObject.CompareTag("plataformaMover"))
-        //   {
-        //        this.transform.parent = null;
-        // }
+          //if (collision2D.gameObject.CompareTag("plataformaMover"))
+           //{
+           // transform.parent = null;
+          // }
     }
 
     IEnumerator LevouDanoInimigo()

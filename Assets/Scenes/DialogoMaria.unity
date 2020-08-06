@@ -29399,7 +29399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294bb39b26f15d45b46b8309d5192df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 300
+  forcaPulo: 13
   velocidadeMax: 5
   Vida: 3
   Recompensas: 0
